@@ -684,4 +684,16 @@ FOOTER
   .img-fundo img {
     width: unset;
   }
+
+  .versiculo {
+    width: 90%;
+  }
+
+  body > section {
+    display: none !important;
+  }
+
+  footer {
+    display: none;
+  }
 }
