@@ -676,3 +676,12 @@ FOOTER
   font-size: 1.2em;
   padding-left: 15px;
 }
+
+@media screen and (max-width: 800px) {
+  .intro {
+    position: relative;
+  }
+  .img-fundo img {
+    width: unset;
+  }
+}
