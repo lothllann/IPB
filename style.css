@@ -723,15 +723,8 @@ FOOTER
   .dep_container {
     display: flex !important;
   }
+  .final_container
   
-
-
-
-  
-
-  footer {
-    display: none;
-  }
 }
 
 @media screen and (max-width: 850px) {
