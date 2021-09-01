@@ -1,50 +1,9 @@
-<!DOCTYPE html>
+<?php
+include 'head.php';
+include 'header.php';
+?>
 
-<html>
-
-<head>
-  <title>IPBCXS</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="shortcut icon" href="favicon.ico">
-
-</head>
-
-<body>
-  <header class="intro">
-
-    <div class="img-fundo">
-      <img src="img/serraa.png" alt="">
-    </div>
-
-    <div class="container-intro container">
-
-      <div class="logo">
-        <a href="#">
-          <img src="img/logoo.png" alt="Presbiteriana de Caxias do Sul">
-        </a>
-      </div>
-
-
-      <!-- * <input id="menu-hamburguer" type="checkbox" /> 
-      <label for="menu-hamburguer">
-        <div class="menu">
-          <span class="hamburguer"></span>
-        </div>
-      </label>
-      -->
-    </div>
-  </header>
-
-  <div class="versiculo">
-    <p>‘Pois nele vivemos, nos movemos e existimos’, como disseram alguns dos poetas de vocês: ‘Também somos descendência dele’.</p>
-    <span>
-      <p>Atos 17:18</p>
-    </span>
-  </div>
-
-  <section class="history">
+<section class="history">
     <h1>Conheça a IPB</h1>
 
     <div class="container hist_container">
@@ -70,9 +29,9 @@
         <img src="img/banco.png" alt="bancos">
       </div>
     </div>
-  </section>
+</section>
 
-  <section class="container program_belief">
+<section class="container program_belief">
     <div class="horarios" id="horarios">
 
       <h1>Programações</h1>
@@ -167,9 +126,9 @@
         <a href=#cremos>Confissões</a>
       </div>
     </div>
-  </section>
+</section>
 
-  <section class="departamental" id="departamental">
+<section class="departamental" id="departamental">
     <h1>Departamentais</h1>
 
     <div class="container dep_container">
@@ -200,93 +159,8 @@
       <a href=#departamental>Saiba mais</a>
     </div>
     </div>
-  </section>
+</section>
 
-  <section class="separador">
-    <div class="v container">
-      E a esperança não nos decepciona, porque Deus derramou seu amor em nossos corações, por meio do Espírito Santo que ele nos concedeu.
-      <div>Romanos 5:5</div>
-    </div>
-  </section>
-
-  <footer class="footer">
-
-    <div class="final">
-      <div class="container final_container">
-
-        <div class="localizacao">
-          <h2>Localização</h2>
-
-          <dl class="matriz">
-            <dt> Matriz</dt>
-            <dd>Rua Ernesto Zanrosso, 2669</dd>
-            <dd>Caxias do Sul-RS</dd>
-          </dl>
-
-          <dl class="Congregacao">
-            <dt> Congregação</dt>
-            <dd>Rua Ernesto Zanrosso, 2669</dd>
-            <dd>Vacaria-RS</dd>
-          </dl>
-        </div>
-
-        <div class="contato">
-          <h2>Contato</h2>
-
-          <dl class="pastor">
-            <dt>Pastor</dt>
-            <dd>Rev. Alexandre Alencar</dd>
-            <dd>-(54)9999-9999</dd>
-          </dl>
-
-          <dl class="presb">
-            <dt>Presbiteros</dt>
-            <dd>Douglas Tedesco</dd>
-            <dd>-(54)9999-9999</dd>
-
-            <dd>Paulo Alves</dd>
-            <dd>-(54)9999-9999</dd>
-          </dl>
-        </div>
-
-        <div class="final_logo">
-
-          <div class="logo_footer">
-            <img src="img/logo_footer.png" alt="logo footer">
-          </div>
-
-          <div class="final_text">Toda honra poder e glória a DEUS</div>
-
-        </div>
-
-        <div class="sociais">
-          <div class="sociais_container">
-            <h2>Nos acompanhe no</h2>
-            <ul class="rs">
-              <li><a href="#"><img src="img/faceI.png" alt=""></a></li>
-              <li><a href="#"><img src="img/YouTubI.png" alt=""></a></li>
-              <li><a href="#"><img src="img/InstaI.png" alt=""></a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="copy">
-      <div class="container copy_container">
-        <div class="copy_logo">
-          <img src="img/Logo-IPB.png" alt="logo_footer">
-        </div>
-
-        <div class="copy_text">
-          Igreja Presbiteriana do Brasil
-        </div>
-
-      </div>
-    </div>
-
-  </footer>
-
-</body>
-
-</html>
+<?php
+include 'footer.php';
+?>

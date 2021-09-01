@@ -234,14 +234,7 @@ HISTORIA
   gap: 10px;
 }
 
-@media (max-width: 1200px) {
-  .hist_container {
-    grid-template-columns: 2fr 1fr;
-    grid-template-areas:
-      "hist_info img_church"
-      "his_info img_church";
-  }
-}
+
 
 .history h1 {
   margin: 60px 0 60px 0;
@@ -400,7 +393,7 @@ DEPARTAMENTAIS
 */
 
 .departamental {
-  display: table;
+  
   margin: 0 auto;
   background: url("img/celtic_cross.png") no-repeat center;
   background-size: cover;
@@ -677,7 +670,75 @@ FOOTER
   padding-left: 15px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1203px){
+
+  .container{
+  max-width: 900px;
+  margin: 0 auto;
+  display: table;
+ }
+
+  .intro {
+    position: relative;
+  }
+  .img-fundo img {
+    width: unset;
+    position:relative
+  }
+
+  .versiculo {
+    width: 70%;
+  }
+
+  .hist_container {
+    margin: 0 auto;
+    display: flex;
+  }
+
+  .hist_info{
+    width: 70%;
+    padding-right: 10px;
+  }
+
+  .img_bbl, .img_bnc{
+    display: none;
+  }
+
+  .program_belief{
+    display: flex !important;
+  }
+
+  .horarios, .cremos{
+    height: 1050px;
+  }
+
+  .horarios h2 {
+    margin-top: 60px;
+    margin-bottom: 10px;
+  }
+  .horarios h1 {
+    margin-bottom: 30px;
+  }
+
+  .dep_container {
+    display: flex !important;
+  }
+  
+
+
+
+  
+
+  footer {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 850px) {
+
+  .container{
+    max-width: 600px;
+  }
   .intro {
     position: relative;
   }
@@ -686,7 +747,25 @@ FOOTER
   }
 
   .versiculo {
-    width: 90%;
+    width: 60%;
+  }
+
+  .history {
+    display: block !important;
+  }
+
+  .hist_info{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .hist_info h2 {
+    text-align: center;
+  }
+
+  .img_bbl, .img_bnc, .img_igr{
+    display: none !important;
   }
 
   body > section {
@@ -697,3 +776,7 @@ FOOTER
     display: none;
   }
 }
+
+
+
+
