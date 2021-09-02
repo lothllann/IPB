@@ -234,8 +234,6 @@ HISTORIA
   gap: 10px;
 }
 
-
-
 .history h1 {
   margin: 60px 0 60px 0;
 }
@@ -393,7 +391,6 @@ DEPARTAMENTAIS
 */
 
 .departamental {
-  
   margin: 0 auto;
   background: url("img/celtic_cross.png") no-repeat center;
   background-size: cover;
@@ -670,20 +667,19 @@ FOOTER
   padding-left: 15px;
 }
 
-@media screen and (max-width: 1203px){
-
-  .container{
-  max-width: 900px;
-  margin: 0 auto;
-  display: table;
- }
+@media screen and (max-width: 1203px) {
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: table;
+  }
 
   .intro {
     position: relative;
   }
   .img-fundo img {
     width: unset;
-    position:relative
+    position: relative;
   }
 
   .versiculo {
@@ -695,20 +691,22 @@ FOOTER
     display: flex;
   }
 
-  .hist_info{
+  .hist_info {
     width: 70%;
     padding-right: 10px;
   }
 
-  .img_bbl, .img_bnc{
+  .img_bbl,
+  .img_bnc {
     display: none;
   }
 
-  .program_belief{
+  .program_belief {
     display: flex !important;
   }
 
-  .horarios, .cremos{
+  .horarios,
+  .cremos {
     height: 1050px;
   }
 
@@ -723,13 +721,22 @@ FOOTER
   .dep_container {
     display: flex !important;
   }
-  .final_container
-  
+  .final_container {
+    display: grid !important;
+    grid-template-columns: 2fr 1fr 2fr;
+  }
+
+  .contato {
+    display: none;
+  }
+
+  .copy_container {
+    display: flex !important;
+  }
 }
 
 @media screen and (max-width: 850px) {
-
-  .container{
+  .container {
     max-width: 600px;
   }
   .intro {
@@ -747,7 +754,7 @@ FOOTER
     display: block !important;
   }
 
-  .hist_info{
+  .hist_info {
     display: block;
     margin: 0 auto;
     width: 100%;
@@ -757,19 +764,71 @@ FOOTER
     text-align: center;
   }
 
-  .img_bbl, .img_bnc, .img_igr{
+  .img_bbl,
+  .img_bnc,
+  .img_igr {
     display: none !important;
   }
 
-  body > section {
-    display: none !important;
+  .program_belief {
+    display: table !important;
   }
 
-  footer {
+  .cremos,
+  .btn_cr {
     display: none;
   }
+
+  .horarios h2 {
+    margin-top: 60px;
+    margin-bottom: 10px;
+  }
+  .horarios h1 {
+    margin-bottom: 30px;
+  }
+
+  .dep_container {
+    display: flex !important;
+    justify-content: space-between !important;
+  }
+  .final_container {
+    display: grid !important;
+    grid-template-columns: 2fr 1fr 2fr;
+  }
+
+  .contato {
+    display: none;
+  }
+
+  .copy_container {
+    display: flex !important;
+  }
+
+  .dep_container img {
+    display: block;
+    max-width: 100%;
+  }
+
+  .dep_container p,
+  .ds::after,
+  .btn_dp::before {
+    display: none;
+  }
+
+  .d_ump,
+  .d_uph,
+  .d_saf {
+    width: 30%;
+    height: 30%;
+  }
+
+  .d_ump,
+  .d_saf {
+    padding-top: 200px;
+  }
+
+  .departamental h1 {
+    padding-top: 30px;
+    margin-bottom: 0px;
+  }
 }
-
-
-
-
