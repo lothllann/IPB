@@ -75,6 +75,16 @@ INTRODUÇÃO
   height: 100%;
   overflow: hidden;
   width: 100%;
+  display: block;
+}
+
+.img_1203px,
+.img_850px,
+.img_600px {
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+  display: none;
 }
 
 .img-fundo img {
@@ -102,10 +112,19 @@ INTRODUÇÃO
   position: relative;
 }
 
+.logo img {
+  display: block;
+  max-width: 100%;
+}
+
 .container-intro img {
   animation: moveBanner 1.75s 0.5s forwards;
   opacity: 0;
   position: relative;
+}
+
+.menu {
+  display: none !important;
 }
 
 .menu {
@@ -255,6 +274,10 @@ HISTORIA
   grid-area: img_church;
 }
 
+.img_igr_1203px {
+  display: none;
+}
+
 .img_bbl {
   grid-area: img_bbl;
 }
@@ -315,6 +338,10 @@ PROGRAMAÇÕES
 
 .horarios dd {
   width: 260px;
+}
+
+.horarios_mobile {
+  display: none;
 }
 
 /*---------------------------------------------------------------------------------------------------------------
@@ -667,6 +694,10 @@ FOOTER
   padding-left: 15px;
 }
 
+/*---------------------------------------------------------------------------------------------------------------
+RESPONSIVO
+*/
+
 @media screen and (max-width: 1203px) {
   .container {
     max-width: 900px;
@@ -677,9 +708,11 @@ FOOTER
   .intro {
     position: relative;
   }
-  .img-fundo img {
+
+  .img_1203px img {
     width: unset;
     position: relative;
+    display: block !important;
   }
 
   .versiculo {
@@ -693,12 +726,17 @@ FOOTER
 
   .hist_info {
     width: 70%;
-    padding-right: 10px;
+    padding-right: 30px;
   }
 
   .img_bbl,
-  .img_bnc {
+  .img_bnc,
+  .img_igr {
     display: none;
+  }
+
+  .img_igr_1203px {
+    display: block !important;
   }
 
   .program_belief {
@@ -735,15 +773,21 @@ FOOTER
   }
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 900px) {
+  .menu {
+    display: block !important;
+  }
+
   .container {
     max-width: 600px;
   }
   .intro {
     position: relative;
   }
-  .img-fundo img {
+  .img_850px img {
     width: unset;
+    position: relative;
+    display: block !important;
   }
 
   .versiculo {
@@ -766,7 +810,8 @@ FOOTER
 
   .img_bbl,
   .img_bnc,
-  .img_igr {
+  .img_igr,
+  .img_igr_1203px {
     display: none !important;
   }
 
@@ -779,12 +824,37 @@ FOOTER
     display: none;
   }
 
-  .horarios h2 {
-    margin-top: 60px;
-    margin-bottom: 10px;
+  .horarios {
+    display: none;
   }
-  .horarios h1 {
+
+  .horarios_mobile {
+    display: block;
+  }
+
+  .horarios_mobile h2,
+  dd {
+    text-align: center !important;
+    padding-left: 0px !important;
+  }
+
+  .horarios_mobile dd {
+    font-size: 1.4em;
+    margin-bottom: 15px;
+  }
+
+  .horarios_mobile h2 {
+    font-size: 1.7em;
+    margin-top: 60px;
+    margin-bottom: 15px;
+  }
+  .horarios_mobile h1 {
     margin-bottom: 30px;
+  }
+
+  .btn_hr a {
+    margin-top: 60px !important;
+    margin-right: 0px !important;
   }
 
   .dep_container {
