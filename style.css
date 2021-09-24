@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*---------------------------------------------------------------------------------------------------------------
 ESTILOS GERAIS
 */
@@ -1094,4 +1095,1102 @@ RESPONSIVO
         padding-top: 30px;
         margin-bottom: 0px;
     }
+=======
+/*---------------------------------------------------------------------------------------------------------------
+ESTILOS GERAIS
+*/
+
+a {
+    text-decoration: none;
+    color: #fffff0;
+}
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/**
+ * Remove list-style
+ */
+
+ol,
+ul {
+    list-style: none;
+}
+
+p,
+dd {
+    color: #383e33;
+    text-align: justify;
+}
+
+h1 {
+    margin: 0 auto;
+    color: #3a1e1c;
+    text-align: center;
+    font-size: 2.4em;
+    font-weight: bold;
+}
+
+h2 {
+    margin: 0 auto;
+    color: black;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+body {
+    font-family: "Libre Baskerville";
+    font-size: 1em;
+    font-weight: normal;
+    display: block;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1124px;
+    margin: 0 auto;
+    display: block;
+}
+
+
+/*---------------------------------------------------------------------------------------------------------------
+INTRODUÇÃO
+*/
+
+.intro {
+    height: 100vh;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.img-fundo {
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+    display: block;
+}
+
+.img_1203px,
+.img_850px,
+.img_600px {
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+    display: none;
+}
+
+.img-fundo img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+    animation: zoom 25s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+.container-intro {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logo {
+    width: 100%;
+    align-self: center;
+    margin: 0 auto;
+    position: relative;
+}
+
+.logo img {
+    display: block;
+    max-width: 100%;
+}
+
+.container-intro img {
+    animation: moveBanner 1.75s 0.5s forwards;
+    opacity: 0;
+    position: relative;
+}
+
+.menu {
+    display: none !important;
+}
+
+.menu {
+    position: relative;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    top: -12%;
+    right: -290%;
+}
+
+.hamburguer {
+    position: relative;
+    display: inline-block;
+    background: #fffff0;
+    width: 50px;
+    height: 10px;
+    top: 29px;
+    left: 15px;
+    transition: 0.5s ease-in-out;
+    border-radius: 4px;
+}
+
+.hamburguer:before,
+.hamburguer:after {
+    background: #fffff0;
+    content: "";
+    display: block;
+    border-radius: 4px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: 0.5s ease-in-out;
+}
+
+.hamburguer:before {
+    top: -15px;
+}
+
+.hamburguer:after {
+    bottom: -15px;
+}
+
+.intro input {
+    display: none;
+}
+
+input:checked~label .hamburguer {
+    transform: rotate(45deg);
+    background: #383e33;
+}
+
+input:checked~label .hamburguer:before {
+    transform: rotate(90deg);
+    background: #383e33;
+    top: 0;
+}
+
+input:checked~label .hamburguer:after {
+    transform: rotate(90deg);
+    background: #383e33;
+    bottom: 0;
+}
+
+.versiculo {
+    padding-top: 60px;
+    padding-bottom: 120px;
+    margin: 0 auto;
+    height: 80px;
+    width: 520px;
+}
+
+.versiculo p {
+    color: #383e33;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.versiculo>span p {
+    color: #383e33;
+    font-size: 1.3em;
+    text-align: right;
+    font-style: italic;
+}
+
+.versiculo span ::after {
+    display: block;
+    content: "";
+    width: 100px;
+    height: 4px;
+    background: #383e33;
+    margin: 30px auto 120px auto;
+    border-radius: 4px;
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(1.3);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes moveBanner {
+    0% {
+        transform: translateY(-30rem) rotateY(-20deg);
+    }
+    100% {
+        transform: translateY(0) rotateY(0);
+        opacity: 1;
+    }
+}
+
+
+/*---------------------------------------------------------------------------------------------------------------
+HISTORIA
+*/
+
+.hist_container {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 50% 269px 269px;
+    grid-template-rows: 263px 150px;
+    grid-template-areas: "hist_info img_church img_bbl" "hist_info img_church img_bnc";
+    gap: 10px;
+}
+
+.history h1 {
+    margin: 60px 0 60px 0;
+}
+
+.history img {
+    display: block;
+    max-width: 100%;
+}
+
+.hist_info {
+    grid-area: hist_info;
+}
+
+.hist_info h2 {
+    margin-bottom: 30px;
+}
+
+.img_church {
+    grid-area: img_church;
+}
+
+.img_igr_1203px {
+    display: none;
+}
+
+.img_bbl {
+    grid-area: img_bbl;
+}
+
+.img_bnc {
+    grid-area: img_bnc;
+}
+
+.history::after {
+    display: block;
+    content: "";
+    width: 100px;
+    height: 4px;
+    background: #383e33;
+    margin: 60px auto 120px auto;
+    border-radius: 4px;
+}
+
+
+/*---------------------------------------------------------------------------------------------------------------
+PROGRAMAÇÕES 
+*/
+
+.program_belief {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 120px;
+}
+
+.program_belief dd {
+    padding-left: 20px;
+    text-align: justify;
+}
+
+.program_belief::after {
+    display: block;
+    content: "";
+    width: 100px;
+    height: 4px;
+    background: #383e33;
+    margin: 60px auto 120px auto;
+    border-radius: 4px;
+}
+
+.horarios {
+    width: 50%;
+    height: 879px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-right: 10px;
+}
+
+.horarios h1 {
+    margin-bottom: 60px;
+}
+
+.horarios h2 {
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+.horarios dd {
+    width: 260px;
+}
+
+.horarios_mobile {
+    display: none;
+}
+
+
+/*---------------------------------------------------------------------------------------------------------------
+CENTRO TEOLOGICO
+*/
+
+.theology {
+    background-color: #DDD8D2;
+    display: block;
+    position: relative;
+    z-index: -1;
+}
+
+.theology h1 {
+    color: #262728;
+    padding-top: 30px;
+}
+
+.theology .theo_title img {
+    position: relative;
+    bottom: 55px;
+    left: 45.5%;
+    z-index: -2;
+}
+
+.theo_info {
+    color: #262728;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.theo_info p {
+    text-align: center !important;
+}
+
+.theo_info::after {
+    display: block;
+    content: "";
+    width: 2px;
+    height: 80px;
+    background: #db7301;
+    margin: 60px auto 60px auto;
+    border-radius: 4px;
+}
+
+.theo_btn {
+    width: 100%;
+    display: flex;
+    padding-bottom: 30px;
+    justify-content: center;
+}
+
+
+/*---------------------------------------------------------------------------------------------------------------
+CONFISSÕES
+*/
+
+.cremos {
+    height: 879px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-left: 10px;
+}
+
+.cremos h1 {
+    margin-bottom: 60px;
+}
+
+.cremos h2 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.btn {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.btn_hr a {
+    display: block;
+    padding: 18px;
+    text-align: center;
+    font-size: 1.2em;
+    background-color: #383e33;
+    width: 180px;
+    height: 65px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+    border: 3px solid white;
+    box-shadow: 0 0 0 2px #3a1e1c;
+    transition: 0.1s ease-in-out;
+}
+
+.btn_hr a:hover {
+    background-color: white;
+    color: #3a1e1c;
+}
+
+.btn_cr a {
+    display: inline-block;
+    padding: 18px;
+    text-align: center;
+    font-size: 1.2em;
+    background-color: #383e33;
+    width: 180px;
+    height: 65px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+    border: 3px solid white;
+    box-shadow: 0 0 0 2px #3a1e1c;
+    transition: 0.1s ease-in-out;
+}
+
+.btn_cr a:hover {
+    background-color: white;
+    color: #3a1e1c;
+}
+
+
+/*---------------------------------------------------------------------------------------------------------------
+DEPARTAMENTAIS
+*/
+
+.departamental {
+    margin: 0 auto;
+    background: url("img/ceia-dep.png") no-repeat center;
+    background-size: cover;
+    height: 780px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.departamental h1 {
+    padding-top: 60px;
+    margin-bottom: 60px;
+    width: 100%;
+}
+
+.dep_container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.d_ump,
+.d_uph,
+.d_saf {
+    width: 33%;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ds::after {
+    display: block;
+    content: "";
+    width: 5px;
+    height: 22px;
+    background: #3a1e1c;
+    border-radius: 4px;
+    margin: 15px auto 30px auto;
+}
+
+.btn_dp {
+    width: 100%;
+    align-self: flex-end;
+    margin-bottom: 30px;
+}
+
+.btn_dp a {
+    margin: 0 auto;
+    display: block;
+    padding: 18px;
+    text-align: center;
+    font-size: 1.2em;
+    background-color: #383e33;
+    width: 180px;
+    height: 65px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 3px solid transparent;
+    box-shadow: 0 0 0 2px #3a1e1c;
+    transition: 0.1s ease-in-out;
+}
+
+.btn_dp a:hover {
+    background-color: transparent;
+    color: #3a1e1c;
+}
+
+.btn_dp::before {
+    display: block;
+    content: "";
+    width: 100px;
+    height: 4px;
+    background: #3a1e1c;
+    margin: 60px auto 30px auto;
+    border-radius: 4px;
+}
+
+
+/*---------------------------------------------------------------------------------------------------------------
+FOOTER
+*/
+
+.separador {
+    background: url("img/footer.png") no-repeat center;
+    background-size: cover;
+    width: 100%;
+    margin: 0 auto;
+    height: 185px;
+    display: block;
+}
+
+.v {
+    color: #fffff0;
+    font-weight: bold;
+    font-size: 1.3em;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 750px;
+}
+
+.v div {
+    padding-top: 30px;
+    font-size: 1.2em;
+}
+
+.final {
+    height: 333px;
+    background-color: #383e33;
+}
+
+.final_container {
+    margin: 0 auto;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 2fr;
+}
+
+.final_container h2 {
+    color: #fffff0;
+}
+
+.final_container dt {
+    color: #fffff0;
+}
+
+.final_container dd {
+    color: #fffff0;
+}
+
+.localizacao {
+    padding-top: 60px;
+}
+
+.localizacao h2 {
+    margin-bottom: 15px;
+}
+
+.localizacao dt {
+    margin-bottom: 5px;
+    font-size: 1.1em;
+}
+
+.localizacao dd {
+    text-align: left;
+    margin-bottom: 2px;
+    font-size: 0.9em;
+    padding-left: 10px;
+}
+
+.matriz {
+    margin-bottom: 15px;
+}
+
+.matriz::after {
+    display: block;
+    content: "";
+    width: 39px;
+    height: 1px;
+    background: #fffff0;
+    border-radius: 1px;
+    margin-top: 15px;
+}
+
+.contato {
+    padding-top: 60px;
+}
+
+.contato h2 {
+    margin-bottom: 15px;
+}
+
+.contato dt {
+    margin-bottom: 5px;
+    font-size: 1.1em;
+}
+
+.contato dd {
+    text-align: left;
+    margin-bottom: 2px;
+    font-size: 0.9em;
+    padding-left: 15px;
+}
+
+.pastor {
+    margin-bottom: 15px;
+}
+
+.pastor dd:last-child {
+    font-style: italic;
+    font-size: 0.8em;
+    padding-left: 15px;
+}
+
+.pastor::after {
+    display: block;
+    content: "";
+    width: 39px;
+    height: 1px;
+    background: #fffff0;
+    border-radius: 1px;
+    margin-top: 15px;
+}
+
+.presb dd:nth-child(odd) {
+    font-style: italic;
+    font-size: 0.8em;
+    padding-left: 15px;
+    padding-bottom: 15px;
+}
+
+.final_logo {
+    display: flex;
+    width: 100%;
+    padding-top: 15px;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.final_text {
+    width: 46px;
+    color: #fffff0;
+    font-size: 0.9em;
+    text-align: center;
+    line-height: 1.3em;
+    letter-spacing: 0.4px;
+    padding-top: 15px;
+}
+
+.final_text::before,
+.final_text::after {
+    display: block;
+    content: "";
+    width: 39px;
+    height: 1px;
+    background: #fffff0;
+    border-radius: 1px;
+    margin: 5px auto;
+}
+
+.sociais {
+    padding-top: 60px;
+}
+
+.sociais_container {
+    margin: 0 0 0 auto;
+    width: 194px;
+}
+
+.sociais ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sociais ul li {
+    padding-top: 30px;
+}
+
+.copy {
+    height: 40px;
+    background-color: #fffff0;
+}
+
+.copy_container {
+    height: 100%;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.copy_text {
+    text-align: left;
+    color: #005131;
+    font-size: 1.2em;
+    padding-left: 15px;
+}
+
+
+/*---------------------------------------------------------------------------------------------------------------
+PEDIDOS DE ORAÇÃO - MODAL
+*/
+
+.modal_pray {
+    position: fixed;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    bottom: 0;
+    right: 0;
+    z-index: 2000;
+    cursor: pointer;
+    margin-bottom: 42px;
+    margin-right: 30px;
+    border-radius: 50%;
+    animation: pray_show_animation 1.5s forwards;
+}
+
+.img_pray {
+    max-height: 123px;
+    width: 123px;
+    box-shadow: 10px 12px 15px 0px rgba(44, 44, 44, 0.25);
+    border-radius: 50%;
+    border: 0.5px solid #731D34;
+    transition: transform 1s;
+    transform: translateX(0) scale(1);
+}
+
+.img_pray:hover,
+.img_pray:focus {
+    transform: translateX(-20px) scale(1.2);
+}
+
+.hide {
+    display: none;
+}
+
+@keyframes pray_show_animation {
+    from {
+        opacity: 0;
+        transform: translate3d(120px, 0, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes pray_zoom {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+.modal_container {
+    height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal_container.ativo {
+    display: flex;
+}
+
+.modal {
+    background: rgba(115, 29, 52, 0.98);
+    padding: 30px 0;
+    border-radius: 25px;
+    max-width: 900px;
+    min-width: 500px;
+    width: 800px;
+    box-shadow: 10px 10px 10px 2px rgba(46, 8, 18, 0.4);
+}
+
+.modal h1 {
+    color: #fffff0;
+    margin-bottom: 30px;
+}
+
+@keyframes modal {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -200px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.ativo .modal {
+    animation: modal 1.4s forwards;
+}
+
+.form_pedidos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form_organizado {
+    width: 80%;
+    display: flex;
+}
+
+.form_organizado label {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #fffff0;
+    margin-right: 25px;
+    width: 10%;
+}
+
+.form_organizado input {
+    border: none;
+    border-radius: 6px;
+    height: 35px;
+    width: 80%;
+    margin-bottom: 30px;
+    background-color: #fffff0;
+}
+
+.input_pedidos input {
+    height: 210px;
+}
+
+.btn_pedidos button {
+    background-color: #fffff0;
+    color: #731D34;
+    width: 200px;
+    height: 50px;
+    margin: 20px;
+    border: 0px;
+    border-radius: 18px;
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 1.5s ease-in-out;
+}
+
+.btn_pedidos button:hover {
+    background-color: #731D34;
+    color: #fffff0;
+    box-shadow: 5px 5px 5px 1px rgba(46, 8, 18, 0.4);
+}
+
+
+/*---------------------------------------------------------------------------------------------------------------
+RESPONSIVO
+*/
+
+@media screen and (max-width: 1203px) {
+    .container {
+        max-width: 900px;
+        margin: 0 auto;
+        display: table;
+    }
+    .intro {
+        position: relative;
+    }
+    .img_1203px img {
+        width: unset;
+        position: relative;
+        display: block !important;
+    }
+    .versiculo {
+        width: 70%;
+    }
+    .hist_container {
+        margin: 0 auto;
+        display: flex;
+    }
+    .hist_info {
+        width: 70%;
+        padding-right: 30px;
+    }
+    .img_bbl,
+    .img_bnc,
+    .img_igr {
+        display: none;
+    }
+    .img_igr_1203px {
+        display: block !important;
+    }
+    .program_belief {
+        display: flex !important;
+    }
+    .horarios,
+    .cremos {
+        height: 1050px;
+    }
+    .horarios h2 {
+        margin-top: 60px;
+        margin-bottom: 10px;
+    }
+    .horarios h1 {
+        margin-bottom: 30px;
+    }
+    .dep_container {
+        display: flex !important;
+    }
+    .final_container {
+        display: grid !important;
+        grid-template-columns: 2fr 1fr 2fr;
+    }
+    .contato {
+        display: none;
+    }
+    .copy_container {
+        display: flex !important;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .menu {
+        display: block !important;
+    }
+    .container {
+        max-width: 600px;
+    }
+    .intro {
+        position: relative;
+    }
+    .img_850px img {
+        width: unset;
+        position: relative;
+        display: block !important;
+    }
+    .versiculo {
+        width: 60%;
+    }
+    .history {
+        display: block !important;
+    }
+    .hist_info {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+    }
+    .hist_info h2 {
+        text-align: center;
+    }
+    .img_bbl,
+    .img_bnc,
+    .img_igr,
+    .img_igr_1203px {
+        display: none !important;
+    }
+    .program_belief {
+        display: table !important;
+    }
+    .cremos,
+    .btn_cr {
+        display: none;
+    }
+    .horarios {
+        display: none;
+    }
+    .horarios_mobile {
+        display: block;
+    }
+    .horarios_mobile h2,
+    dd {
+        text-align: center !important;
+        padding-left: 0px !important;
+    }
+    .horarios_mobile dd {
+        font-size: 1.4em;
+        margin-bottom: 15px;
+    }
+    .horarios_mobile h2 {
+        font-size: 1.7em;
+        margin-top: 60px;
+        margin-bottom: 15px;
+    }
+    .horarios_mobile h1 {
+        margin-bottom: 30px;
+    }
+    .btn_hr a {
+        margin-top: 60px !important;
+        margin-right: 0px !important;
+    }
+    .dep_container {
+        display: flex !important;
+        justify-content: space-between !important;
+    }
+    .final_container {
+        display: grid !important;
+        grid-template-columns: 2fr 1fr 2fr;
+    }
+    .contato {
+        display: none;
+    }
+    .copy_container {
+        display: flex !important;
+    }
+    .dep_container img {
+        display: block;
+        max-width: 100%;
+    }
+    .dep_container p,
+    .ds::after,
+    .btn_dp::before {
+        display: none;
+    }
+    .d_ump,
+    .d_uph,
+    .d_saf {
+        width: 30%;
+        height: 30%;
+    }
+    .d_ump,
+    .d_saf {
+        padding-top: 200px;
+    }
+    .departamental h1 {
+        padding-top: 30px;
+        margin-bottom: 0px;
+    }
+>>>>>>> e847895049c11c41cde06192f3a7a1fc0697dc72
 }
