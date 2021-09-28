@@ -1,3 +1,50 @@
+/*---------------------------------------------------------------------------------------------------------------
+INTRODUÇÃO
+*/
+
+.intro {
+    background: url("img/bg_teo.png") no-repeat center;
+    background-size: cover;
+    height: 480px;
+}
+
+.versiculo {
+    padding-top: 60px;
+    padding-bottom: 120px;
+    margin: 0 auto;
+    height: 80px;
+    width: 65%;
+}
+
+.versiculo p {
+    color: #383e33;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.versiculo>span p {
+    color: #383e33;
+    font-size: 1.3em;
+    text-align: right;
+    font-style: italic;
+}
+
+.versiculo span ::after {
+    display: block;
+    content: "";
+    width: 100px;
+    height: 4px;
+    background: #383e33;
+    margin: 30px auto 120px auto;
+    border-radius: 4px;
+}
+
+
+/*---------------------------------------------------------------------------------------------------------------
+FOOTER
+*/
+
 .separador_theo {
     background: url("img/bg_footer_theo.png") no-repeat center;
     background-size: cover;
