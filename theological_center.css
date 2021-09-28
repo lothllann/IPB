@@ -1,0 +1,8 @@
+.separador_theo {
+    background: url("img/bg_footer_theo.png") no-repeat center;
+    background-size: cover;
+}
+
+.footer_theo .final {
+    background-color: #db7301;
+}
