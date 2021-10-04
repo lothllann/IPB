@@ -4,6 +4,7 @@ INTRODUÇÃO
 
 body {
     background-color: #ddd8d2;
+    font-family: 'Cinzel', serif;
 }
 
 h1,
@@ -65,7 +66,23 @@ CURSOS
 
 .cursos_teologicos {
     display: flex;
-    padding-bottom: 90px;
+    padding-bottom: 60px;
+}
+
+.info::after {
+    position: relative;
+    display: block;
+    content: "";
+    width: 100px;
+    height: 3px;
+    background: #383e33;
+    margin: 30px auto 120px auto;
+    border-radius: 4px;
+    left: 50%;
+}
+
+.conf .info::after {
+    left: -50%;
 }
 
 .conf .info {
@@ -88,7 +105,29 @@ CURSOS
 }
 
 .info_title {
-    margin-bottom: 30px;
+    margin-bottom: 0px;
+}
+
+.info_title img {
+    position: relative;
+}
+
+.mancha_title_min img {
+    left: 41%;
+    bottom: 45px;
+    z-index: -1;
+}
+
+.mancha_title_conf img {
+    left: 36%;
+    bottom: 32px;
+    z-index: -1;
+}
+
+.mancha_title_teo img {
+    left: 48%;
+    bottom: 52px;
+    z-index: -1;
 }
 
 .info_title h2 {
@@ -97,14 +136,64 @@ CURSOS
 
 .info p {
     margin-bottom: 15px;
+    font-size: 0.8em;
 }
 
-.cursos_btn {}
+.cursos_btn {
+    display: inline-block;
+}
+
+.mancha_min {
+    margin-top: 24px;
+}
+
+.mancha_conf {
+    margin-top: 38px;
+}
+
+.mancha_teo {
+    margin-top: -18px;
+}
+
+.mancha_min p {
+    position: relative;
+    bottom: 54px;
+    left: 21%;
+    color: #fffff0;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.mancha_conf p {
+    position: relative;
+    bottom: 48px;
+    left: 33%;
+    color: #fffff0;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.mancha_teo p {
+    position: relative;
+    bottom: 93px;
+    left: 24%;
+    color: #fffff0;
+    font-size: 1.3em;
+    font-weight: bold;
+}
 
 
 /*---------------------------------------------------------------------------------------------------------------
 FOOTER
 */
+
+.separador_theo .v {
+    font-weight: normal;
+}
+
+.footer_theo {
+    font-family: "Libre Baskerville";
+}
 
 .separador_theo {
     background: url("img/bg_footer_theo.png") no-repeat center;
