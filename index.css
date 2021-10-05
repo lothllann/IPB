@@ -294,10 +294,8 @@ CENTRO TEOLOGICO
 */
 
 .theology {
-    background-color: #DDD8D2;
-    display: block;
-    position: relative;
-    z-index: -1;
+    background-color: #ddd8d2;
+    z-index: -9;
 }
 
 .theology h1 {
@@ -326,17 +324,39 @@ CENTRO TEOLOGICO
     display: block;
     content: "";
     width: 2px;
-    height: 80px;
+    height: 60px;
     background: #db7301;
     margin: 60px auto 60px auto;
     border-radius: 4px;
 }
 
 .theo_btn {
-    width: 100%;
     display: flex;
     padding-bottom: 30px;
     justify-content: center;
+}
+
+.theo_btn img {
+    transition: transform 1s;
+    transform: translateY(0) scale(1);
+}
+
+.theo_btn img:hover,
+.theo_btn img:focus {
+    transform: translateY(-40px) scale(1.1);
+}
+
+.theo_btn img {
+    cursor: pointer;
+}
+
+@keyframes pray_zoom {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
 }
 
 
