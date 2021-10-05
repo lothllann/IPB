@@ -301,13 +301,15 @@ CENTRO TEOLOGICO
 .theology h1 {
     color: #262728;
     padding-top: 30px;
+    position: relative;
+    z-index: 2;
 }
 
 .theology .theo_title img {
     position: relative;
     bottom: 55px;
     left: 45.5%;
-    z-index: -2;
+    z-index: 1;
 }
 
 .theo_info {
@@ -320,15 +322,12 @@ CENTRO TEOLOGICO
     text-align: center !important;
 }
 
-.theo_info::after {
-    display: block;
-    content: "";
-    width: 2px;
-    height: 60px;
-    background: #db7301;
-    margin: 60px auto 60px auto;
-    border-radius: 4px;
+.arrow {
+    display: table;
+    margin: 30px auto 60px auto;
 }
+
+.arrow img {}
 
 .theo_btn {
     display: flex;
