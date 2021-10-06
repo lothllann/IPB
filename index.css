@@ -129,7 +129,7 @@ input:checked~label .hamburguer:after {
 
 .versiculo {
     padding-top: 60px;
-    padding-bottom: 120px;
+    padding-bottom: 80px;
     margin: 0 auto;
     height: 80px;
     width: 520px;
@@ -147,16 +147,6 @@ input:checked~label .hamburguer:after {
     font-size: 1.3em;
     text-align: right;
     font-style: italic;
-}
-
-.versiculo span ::after {
-    display: block;
-    content: "";
-    width: 100px;
-    height: 4px;
-    background: #383e33;
-    margin: 30px auto 120px auto;
-    border-radius: 4px;
 }
 
 @keyframes zoom {
@@ -193,7 +183,7 @@ HISTORIA
 }
 
 .history h1 {
-    margin: 60px 0 60px 0;
+    margin: 0px 0 60px 0;
 }
 
 .history img {
@@ -225,69 +215,6 @@ HISTORIA
     grid-area: img_bnc;
 }
 
-.history::after {
-    display: block;
-    content: "";
-    width: 100px;
-    height: 4px;
-    background: #383e33;
-    margin: 60px auto 120px auto;
-    border-radius: 4px;
-}
-
-
-/*---------------------------------------------------------------------------------------------------------------
-PROGRAMAÇÕES 
-*/
-
-.program_belief {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding-top: 120px;
-}
-
-.program_belief dd {
-    padding-left: 20px;
-    text-align: justify;
-}
-
-.program_belief::after {
-    display: block;
-    content: "";
-    width: 100px;
-    height: 4px;
-    background: #383e33;
-    margin: 60px auto 120px auto;
-    border-radius: 4px;
-}
-
-.horarios {
-    width: 50%;
-    height: 879px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    padding-right: 10px;
-}
-
-.horarios h1 {
-    margin-bottom: 60px;
-}
-
-.horarios h2 {
-    margin-top: 30px;
-    margin-bottom: 5px;
-}
-
-.horarios dd {
-    width: 260px;
-}
-
-.horarios_mobile {
-    display: none;
-}
-
 
 /*---------------------------------------------------------------------------------------------------------------
 CENTRO TEOLOGICO
@@ -296,6 +223,8 @@ CENTRO TEOLOGICO
 .theology {
     background-color: #ddd8d2;
     z-index: -9;
+    font-family: 'Cinzel', serif;
+    font-size: 0.8em;
 }
 
 .theology h1 {
@@ -327,8 +256,6 @@ CENTRO TEOLOGICO
     margin: 30px auto 60px auto;
 }
 
-.arrow img {}
-
 .theo_btn {
     display: flex;
     padding-bottom: 30px;
@@ -356,6 +283,53 @@ CENTRO TEOLOGICO
     100% {
         transform: scale(1.2);
     }
+}
+
+
+/*---------------------------------------------------------------------------------------------------------------
+PROGRAMAÇÕES 
+*/
+
+.program_belief {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.program_belief dd {
+    padding-left: 20px;
+    text-align: justify;
+}
+
+.horarios {
+    width: 50%;
+    height: 879px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-right: 10px;
+}
+
+.horarios h1 {
+    margin-bottom: 60px;
+}
+
+.horarios h2 {
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+.horarios dd {
+    width: 260px;
+}
+
+.horarios_mobile {
+    display: none;
+}
+
+.s {
+    margin-top: 90px;
+    margin-bottom: 30px;
 }
 
 
@@ -444,9 +418,14 @@ DEPARTAMENTAIS
 }
 
 .departamental h1 {
-    padding-top: 60px;
     margin-bottom: 60px;
+    margin-top: 15px;
     width: 100%;
+    color: black;
+}
+
+.departamental p {
+    color: black;
 }
 
 .dep_container {
@@ -501,14 +480,4 @@ DEPARTAMENTAIS
 .btn_dp a:hover {
     background-color: transparent;
     color: #3a1e1c;
-}
-
-.btn_dp::before {
-    display: block;
-    content: "";
-    width: 100px;
-    height: 4px;
-    background: #3a1e1c;
-    margin: 60px auto 30px auto;
-    border-radius: 4px;
 }
