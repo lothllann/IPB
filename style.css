@@ -65,13 +65,24 @@ body {
 
 
 /*---------------------------------------------------------------------------------------------------------------
-SEPARADOR
+SEPARADORES
 */
 
 .separador_de_conteudo {
     display: table;
     margin: 30px auto 90px auto;
 }
+
+.separador_interno {
+    margin: 15px auto 15px auto;
+}
+
+.separador_footer {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.s_f {}
 
 
 /*---------------------------------------------------------------------------------------------------------------
@@ -147,20 +158,6 @@ FOOTER
     padding-left: 10px;
 }
 
-.matriz {
-    margin-bottom: 15px;
-}
-
-.matriz::after {
-    display: block;
-    content: "";
-    width: 39px;
-    height: 1px;
-    background: #fffff0;
-    border-radius: 1px;
-    margin-top: 15px;
-}
-
 .contato {
     padding-top: 60px;
 }
@@ -181,24 +178,10 @@ FOOTER
     padding-left: 15px;
 }
 
-.pastor {
-    margin-bottom: 15px;
-}
-
 .pastor dd:last-child {
     font-style: italic;
     font-size: 0.8em;
     padding-left: 15px;
-}
-
-.pastor::after {
-    display: block;
-    content: "";
-    width: 39px;
-    height: 1px;
-    background: #fffff0;
-    border-radius: 1px;
-    margin-top: 15px;
 }
 
 .presb dd:nth-child(odd) {
@@ -217,6 +200,10 @@ FOOTER
     align-items: center;
 }
 
+.logo_footer {
+    margin-bottom: 15px;
+}
+
 .final_text {
     width: 46px;
     color: #fffff0;
@@ -224,18 +211,6 @@ FOOTER
     text-align: center;
     line-height: 1.3em;
     letter-spacing: 0.4px;
-    padding-top: 15px;
-}
-
-.final_text::before,
-.final_text::after {
-    display: block;
-    content: "";
-    width: 39px;
-    height: 1px;
-    background: #fffff0;
-    border-radius: 1px;
-    margin: 5px auto;
 }
 
 .sociais {
