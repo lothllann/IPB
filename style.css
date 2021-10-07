@@ -115,7 +115,7 @@ FOOTER
 }
 
 .final {
-    height: 333px;
+    height: 348px;
     background-color: #383e33;
 }
 
@@ -400,13 +400,14 @@ PEDIDOS DE ORAÇÃO - MODAL
     font-size: 1.5em;
     font-weight: bold;
     cursor: pointer;
-    transition: transform 1.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
 }
 
 .btn_pedidos button:hover {
     background-color: #731D34;
     color: #fffff0;
     box-shadow: 5px 5px 5px 1px rgba(46, 8, 18, 0.4);
+    transform: translateY(-5px) translateX(-5px) scale(1.1);
 }
 
 
