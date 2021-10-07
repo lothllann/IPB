@@ -82,8 +82,6 @@ SEPARADORES
     margin-bottom: 10px;
 }
 
-.s_f {}
-
 
 /*---------------------------------------------------------------------------------------------------------------
 FOOTER
@@ -385,8 +383,11 @@ PEDIDOS DE ORAÇÃO - MODAL
     background-color: #fffff0;
 }
 
-.input_pedidos input {
+.form_organizado textarea {
     height: 210px;
+    width: 80%;
+    border-radius: 6px;
+    background-color: #fffff0;
 }
 
 .btn_pedidos button {
