@@ -29,20 +29,21 @@ p,
 dd {
     color: #383e33;
     text-align: justify;
+    font-size: 16px;
 }
 
 h1 {
     margin: 0 auto;
     color: #3a1e1c;
     text-align: center;
-    font-size: 2.4em;
+    font-size: 34px;
     font-weight: bold;
 }
 
 h2 {
     margin: 0 auto;
     color: black;
-    font-size: 1.5em;
+    font-size: 24px;
     font-weight: bold;
 }
 
@@ -61,6 +62,79 @@ body {
     max-width: 1124px;
     margin: 0 auto;
     display: block;
+}
+
+
+/*---------------------------------------------------------------------------------------------------------------
+MENU
+*/
+
+.menu {
+    position: fixed;
+    z-index: 10000000000;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    height: 80px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu ul {
+    display: flex;
+}
+
+.menu li {
+    margin: 0px 15px;
+    padding: 0px 10px;
+    height: 28px;
+    cursor: pointer;
+}
+
+.menu li a {
+    color: #383e33 !important;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.menu_ativo li a::after {
+    display: none;
+    margin: 0 auto;
+    content: "";
+    width: 0px;
+    height: 2px;
+    background: #383e33;
+    border-radius: 4px;
+}
+
+.menu_ativo li a:hover::after {
+    animation: item_menu 1.2s forwards;
+    display: block;
+}
+
+.menu_ativo {
+    display: flex !important;
+    animation: menu_aparecendo 1.5s forwards;
+}
+
+@keyframes item_menu {
+    from {
+        width: 1px;
+    }
+    to {
+        width: 40px
+    }
+}
+
+@keyframes menu_aparecendo {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 
@@ -388,6 +462,10 @@ PEDIDOS DE ORAÇÃO - MODAL
     width: 80%;
     border-radius: 6px;
     background-color: #fffff0;
+}
+
+.btn_pedidos {
+    margin-top: 10px;
 }
 
 .btn_pedidos button {
