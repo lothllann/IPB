@@ -180,6 +180,7 @@ CENTRO TEOLOGICO
     background-color: #ddd8d2;
     z-index: -9;
     font-family: 'Cinzel', serif;
+    height: 600px;
 }
 
 .theology h1 {
@@ -191,7 +192,7 @@ CENTRO TEOLOGICO
 
 .theology .theo_title img {
     position: relative;
-    bottom: 55px;
+    bottom: 63px;
     left: 45.5%;
     z-index: 1;
 }
@@ -212,22 +213,22 @@ CENTRO TEOLOGICO
 
 .m1 {
     position: relative;
-    left: 68%;
-    bottom: 83px;
+    left: 71.5%;
+    bottom: 92px;
     z-index: 1;
 }
 
 .m2 {
     position: relative;
-    right: 32%;
+    right: 26%;
     bottom: 23px;
     z-index: 1;
 }
 
 .m3 {
     position: relative;
-    left: 47.5%;
-    bottom: 62px;
+    left: 55%;
+    bottom: 68px;
     z-index: 1;
 }
 
