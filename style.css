@@ -74,7 +74,7 @@ MENU
     z-index: 10000000000;
     background-color: rgba(255, 255, 255, 0.5);
     width: 100%;
-    height: 110px;
+    padding: 15px 0px;
     display: none;
     align-items: center;
     justify-content: center;
@@ -83,13 +83,27 @@ MENU
 .menu ul {
     align-items: center;
     display: flex;
-    margin: 15px 0px;
 }
 
 .menu li {
     margin: 0px 5px;
     padding: 0px 10px;
     cursor: pointer;
+    height: 23px;
+}
+
+.menu ul li a img {
+    width: 41px;
+    height: 63px;
+    transition: transform 0.7s ease-in-out;
+}
+
+.menu ul li a img:hover {
+    transform: scale(1.2)
+}
+
+.menu .li_logo {
+    height: 63px;
 }
 
 .menu li a {
@@ -101,19 +115,27 @@ MENU
     padding: 10px 0px;
 }
 
-.menu_ativo li a::after {
+.menu_ativo li a:after {
     display: none;
     margin: 0 auto;
     content: "";
     width: 0px;
     height: 2px;
-    background: #383e33;
+    background: #731D34;
     border-radius: 4px;
 }
 
 .menu_ativo li a:hover::after {
     animation: item_menu 1.2s forwards;
     display: block;
+}
+
+.menu_ativo li a:hover {
+    color: #731D34 !important;
+}
+
+.menu_ativo .li_logo a:hover::after {
+    display: none !important;
 }
 
 .menu_ativo {
