@@ -14,6 +14,14 @@ p {
     font-weight: bold;
 }
 
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
 
 /*---------------------------------------------------------------------------------------------------------------
 INTRODUÇÃO
@@ -26,7 +34,7 @@ INTRODUÇÃO
 .intro {
     background: url("img/bg_teo.png") no-repeat center;
     background-size: cover;
-    height: 350px;
+    height: 550px;
 }
 
 .versiculo {
@@ -40,21 +48,21 @@ INTRODUÇÃO
 .versiculo div {
     display: inline;
     position: relative;
-    bottom: 154px;
+    bottom: 144px;
     right: 13%;
     z-index: -1;
 }
 
 .versiculo p {
     color: #383e33;
-    font-size: 1.2em;
+    font-size: 18px;
     margin-bottom: 15px;
     text-align: center;
 }
 
 .versiculo>span p {
     color: #383e33;
-    font-size: 1.3em;
+    font-size: 15px;
     text-align: right;
     font-style: italic;
 }
@@ -144,7 +152,7 @@ CURSOS
 
 .info p {
     margin-bottom: 15px;
-    font-size: 0.8em;
+    font-size: 12px;
 }
 
 .cursos_btn {
