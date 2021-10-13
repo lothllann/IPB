@@ -18,6 +18,29 @@
 
 <body>
 
+    <nav class="menu" data-menu="scroll">
+
+
+        <ul>
+
+            <li><a href="https://maier-dev.com.br/">Simbolos de Fé</a></li>
+            <li><a href="#">Biblioteca</a></li>
+
+            <li class="element_menu_ativo"><a href="theological_center.html">Centro Teológico</a></li>
+            <li class="li_logo">
+                <a data-menu="lp" href="#intro"><img src="img/simbolo_preto.png" alt="Home" title="HOME"></a>
+                <!-- <a data-menu="lr" href="#intro"><img src="img/logo_roxo.png" alt="Home" title="HOME"></a> -->
+
+            </li>
+            <li><a href="#">Programações</a></li>
+            <li><a href="#">No Que Cremos?</a></li>
+            <li><a href="#contato">Contato</a></li>
+
+        </ul>
+
+
+    </nav>
+
     <section class="intro">
 
     </section>
@@ -276,14 +299,14 @@
                 </div>
 
 
-                <div class="form_organizado  input_pedidos">
+                <div class="form_organizado">
                     <label for="pedido">Pedidos</label>
-                    <input type="text" for="pedido" id="pedido">
+                    <textarea type="text" for="pedido" id="pedido"></textarea>
                 </div>
 
                 <div class="btn_pedidos">
-                    <button data-modal="fechar" class="fechar">Voltar
-                        <button type="submit">Enviar
+                    <button data-modal="fechar" class="fechar">Voltar</button>
+                    <button data-modal="enviar" type="submit">Enviar</button>
                 </div>
 
             </form>
@@ -291,6 +314,8 @@
         </div>
 
     </section>
+
+    <script src="script.js"></script>
 
 </body>
 

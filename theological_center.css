@@ -1,11 +1,7 @@
-/*---------------------------------------------------------------------------------------------------------------
-INTRODUÇÃO
-*/
-
 body {
     background-color: #ddd8d2;
     font-family: 'Cinzel', serif;
-    font-weight: bold !important;
+    font-weight: bold;
 }
 
 h1,
@@ -16,6 +12,15 @@ p {
 
 .p {
     font-weight: bold;
+}
+
+
+/*---------------------------------------------------------------------------------------------------------------
+INTRODUÇÃO
+*/
+
+.menu ul li a {
+    font-family: "Libre Baskerville";
 }
 
 .intro {

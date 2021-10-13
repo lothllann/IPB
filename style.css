@@ -143,6 +143,14 @@ MENU
     animation: menu_aparecendo 1.5s forwards;
 }
 
+.menu ul .element_menu_ativo a {
+    color: #731D34 !important;
+}
+
+.menu ul .element_menu_ativo a::after {
+    display: none;
+}
+
 @keyframes item_menu {
     from {
         width: 1px;
