@@ -5,6 +5,7 @@ INTRODUÇÃO
 body {
     background-color: #ddd8d2;
     font-family: 'Cinzel', serif;
+    font-weight: bold !important;
 }
 
 h1,
@@ -31,6 +32,14 @@ p {
     width: 65%;
 }
 
+.versiculo div {
+    display: inline;
+    position: relative;
+    bottom: 154px;
+    right: 13%;
+    z-index: -1;
+}
+
 .versiculo p {
     color: #383e33;
     font-size: 1.2em;
@@ -43,16 +52,6 @@ p {
     font-size: 1.3em;
     text-align: right;
     font-style: italic;
-}
-
-.versiculo span ::after {
-    display: block;
-    content: "";
-    width: 100px;
-    height: 4px;
-    background: #383e33;
-    margin: 30px auto 120px auto;
-    border-radius: 4px;
 }
 
 
@@ -147,6 +146,14 @@ CURSOS
     display: inline-block;
 }
 
+.cursos_btn img {
+    cursor: pointer;
+}
+
+.cursos_btn p {
+    cursor: pointer;
+}
+
 .mancha_min {
     margin-top: 24px;
 }
@@ -197,6 +204,7 @@ FOOTER
 
 .footer_theo {
     font-family: "Libre Baskerville";
+    margin-top: 90px;
 }
 
 .separador_theo {
