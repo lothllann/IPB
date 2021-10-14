@@ -24,17 +24,42 @@ h2 {
 
 
 /*---------------------------------------------------------------------------------------------------------------
-INTRODUÇÃO
+MENU
 */
 
-.menu ul li a {
-    font-family: "Libre Baskerville";
+.menu {
+    background-color: rgba(0, 0, 0, 0.6) !important;
 }
+
+.menu ul li a {
+    font-size: 16px;
+}
+
+.menu_ativo li a {
+    color: #fffff0 !important;
+}
+
+.menu_ativo li a:hover {
+    color: #db7301 !important;
+}
+
+.menu ul .element_menu_ativo a {
+    color: #db7301 !important;
+}
+
+.menu_ativo li a:after {
+    background: #db7301;
+}
+
+
+/*---------------------------------------------------------------------------------------------------------------
+INTRODUÇÃO
+*/
 
 .intro {
     background: url("img/bg_teo.png") no-repeat center;
     background-size: cover;
-    height: 550px;
+    height: 750px;
 }
 
 .versiculo {
