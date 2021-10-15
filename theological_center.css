@@ -183,7 +183,7 @@ CURSOS
 
 .cursos_btn {
     display: inline-block;
-    transition: transform 1s ease-in-out;
+    transition: transform 1.2s ease-in-out;
 }
 
 .cursos_btn img {
@@ -195,11 +195,11 @@ CURSOS
 }
 
 .cursos_btn:hover {
-    transform: translateX(40px)
+    transform: translateX(60px)
 }
 
 .mancha_min {
-    margin-top: 24px;
+    margin-top: 50px;
 }
 
 .mancha_conf {
