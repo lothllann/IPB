@@ -24,6 +24,24 @@ h2 {
 
 
 /*---------------------------------------------------------------------------------------------------------------
+SEPARADORES
+*/
+
+.separador_cursos {
+    display: table;
+    margin: 60px auto;
+}
+
+.container .vb {
+    padding-top: 30px;
+}
+
+.separador_de_conteudo {
+    margin: 30px auto 180px auto;
+}
+
+
+/*---------------------------------------------------------------------------------------------------------------
 MENU
 */
 
@@ -98,7 +116,7 @@ CURSOS
 */
 
 .cursos {
-    padding: 90px 0px 90px 0px;
+    margin: 120px auto 90px auto;
 }
 
 .cursos h1 {
@@ -107,23 +125,6 @@ CURSOS
 
 .cursos_teologicos {
     display: flex;
-    padding-bottom: 60px;
-}
-
-.info::after {
-    position: relative;
-    display: block;
-    content: "";
-    width: 100px;
-    height: 3px;
-    background: #383e33;
-    margin: 30px auto 120px auto;
-    border-radius: 4px;
-    left: 50%;
-}
-
-.conf .info::after {
-    left: -50%;
 }
 
 .conf .info {
@@ -233,11 +234,55 @@ CURSOS
 
 
 /*---------------------------------------------------------------------------------------------------------------
+PRELETOR
+*/
+
+.rev h1 {
+    margin-bottom: 60px;
+}
+
+.rev div img {
+    display: table;
+    margin: 0 auto 30px auto;
+}
+
+.rev .h2rev {
+    display: table;
+    margin: 0 auto;
+}
+
+.h2rev span img {
+    position: relative;
+    bottom: 30px;
+    z-index: -5;
+    left: 15%;
+}
+
+.rev h2 {
+    font-size: 24px;
+}
+
+.rev_info {
+    width: 70%;
+    display: table;
+    margin: 0 auto 30px auto;
+}
+
+.rev_info p {
+    font-size: 14px;
+    font-style: italic;
+    text-align: center;
+}
+
+
+/*---------------------------------------------------------------------------------------------------------------
 FOOTER
 */
 
-.separador_theo .v {
-    font-weight: normal;
+.final_container dd,
+.final_text,
+.copy_text {
+    font-weight: normal !important;
 }
 
 .footer_theo {
