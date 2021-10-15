@@ -183,14 +183,19 @@ CURSOS
 
 .cursos_btn {
     display: inline-block;
+    transition: transform 1s ease-in-out;
 }
 
 .cursos_btn img {
     cursor: pointer;
 }
 
-.cursos_btn p {
+.cursos_btn span {
     cursor: pointer;
+}
+
+.cursos_btn:hover {
+    transform: translateX(40px)
 }
 
 .mancha_min {
@@ -205,28 +210,28 @@ CURSOS
     margin-top: -18px;
 }
 
-.mancha_min p {
+.mancha_min span {
     position: relative;
-    bottom: 54px;
-    left: 21%;
+    bottom: 29px;
+    right: 53%;
     color: #fffff0;
     font-size: 1.3em;
     font-weight: bold;
 }
 
-.mancha_conf p {
+.mancha_conf span {
     position: relative;
-    bottom: 48px;
-    left: 33%;
+    bottom: 23px;
+    right: 48%;
     color: #fffff0;
     font-size: 1.3em;
     font-weight: bold;
 }
 
-.mancha_teo p {
+.mancha_teo span {
     position: relative;
-    bottom: 93px;
-    left: 24%;
+    bottom: 69px;
+    right: 51%;
     color: #fffff0;
     font-size: 1.3em;
     font-weight: bold;
