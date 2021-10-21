@@ -40,6 +40,17 @@ SEPARADORES
     margin: 30px auto 180px auto;
 }
 
+.s_t_d {
+    position: relative;
+    right: 4.5%;
+    top: 4px;
+}
+
+.s_b_d {
+    position: relative;
+    right: 4.5%;
+}
+
 
 /*---------------------------------------------------------------------------------------------------------------
 MENU
@@ -277,6 +288,150 @@ PRELETOR
     font-size: 14px;
     font-style: italic;
     text-align: center;
+}
+
+
+/*---------------------------------------------------------------------------------------------------------------
+INFORMAÇÕES SOBRE AS MATERIAS
+*/
+
+.info_materias {
+    position: fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+    height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.info_materias.ativo {
+    display: flex;
+}
+
+.materias {
+    background: rgba(221, 216, 216, 0.98);
+    box-shadow: 0px 10px 30px 2px rgba(0, 0, 0, 0.4);
+    padding: 30px 0 10px 0;
+    border-radius: 25px;
+    width: 65%;
+    max-width: 1100px;
+    min-width: 450px;
+}
+
+.materias_container {
+    padding-top: 30px;
+}
+
+.materias_h1 h1 {
+    position: relative;
+    z-index: 1;
+}
+
+.materias_h1 span {
+    position: relative;
+    bottom: 47px;
+    left: 48.5%;
+    z-index: 0;
+}
+
+.materias_h3 h3 {
+    font-size: 19px;
+    position: relative;
+    z-index: 1;
+}
+
+.materias_h3 span {
+    position: relative;
+    bottom: 37px;
+    right: 9%;
+    z-index: 0;
+}
+
+.materias_container {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.materias_disc {
+    width: 280px;
+}
+
+.materias_disc li {
+    margin-top: 3px;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 13px;
+}
+
+.disc_container {
+    position: relative;
+    bottom: 35px;
+}
+
+.materias_disc li::before {
+    font-weight: bold;
+    display: inline;
+    content: "†";
+    width: 5px;
+    height: 5px;
+    padding-right: 10px;
+}
+
+.materias_info {
+    width: 50%;
+    margin-right: 30px;
+}
+
+.materias_info li {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.materias_info li::before {
+    font-size: 20px;
+    display: inline;
+    content: "♁";
+    padding-right: 10px;
+}
+
+.materias_info li:last-child::before {
+    display: none;
+}
+
+.materias_info li:last-child {
+    padding-left: 20px;
+    padding-top: 20px;
+    text-align: justify;
+    font-style: italic;
+}
+
+.materias_btn {
+    margin-top: 45px;
+    width: 240px;
+}
+
+.materias_btn span {
+    color: #fffff0;
+    font-size: 30px;
+    position: relative;
+    left: 32%;
+    bottom: 66px;
+    cursor: pointer;
+}
+
+.materias_btn img {
+    cursor: pointer;
+    transition: transform 1.5s ease-in-out;
+}
+
+.ativo .materias {
+    animation: modal 1.4s forwards;
 }
 
 

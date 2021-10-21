@@ -53,6 +53,33 @@ window.addEventListener('scroll', showMenu);
 /*---------------------------------------------------------------------------------------------------------------
  */
 
+const botaoVoltar = document.querySelector('[data-theo="fechar"]');
+const containerTheo = document.querySelector('[data-theo="container"]');
+const btnAbrir = document.querySelector('[data-theo="open"]');
+
+
+function toggleMateria(event) {
+    event.preventDefault();
+
+    containerTheo.classList.toggle('ativo');
+}
+
+
+function cliqueForaTheo(event) {
+    if (event.target === this) {
+        toggleMateria(event);
+    }
+}
+
+botaoVoltar.addEventListener('click', toggleMateria);
+btnAbrir.addEventListener('click', toggleMateria);
+containerTheo.addEventListener('click', cliqueForaTheo);
+
+
+
+/*---------------------------------------------------------------------------------------------------------------
+ */
+
 // const logo_preto = document.querySelector('[data-menu="lp"]');
 // const logo_roxo = document.querySelector('[data-menu="lr"]');
 
