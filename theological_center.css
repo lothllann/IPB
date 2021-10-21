@@ -1,460 +1,459 @@
-body {
-    background-color: #ddd8d2;
-    font-family: 'Cinzel', serif;
-    font-weight: bold;
-}
-
-h1,
-h2,
-p {
-    color: #262728;
-}
-
-.p {
-    font-weight: bold;
-}
-
-h1 {
-    font-size: 36px;
-}
-
-h2 {
-    font-size: 24px;
-}
-
-
-/*---------------------------------------------------------------------------------------------------------------
+    body {
+        background-color: #ddd8d2;
+        font-family: 'Cinzel', serif;
+        font-weight: bold;
+    }
+    
+    h1,
+    h2,
+    p {
+        color: #262728;
+    }
+    
+    .p {
+        font-weight: bold;
+    }
+    
+    h1 {
+        font-size: 36px;
+    }
+    
+    h2 {
+        font-size: 24px;
+    }
+    /*---------------------------------------------------------------------------------------------------------------
 SEPARADORES
 */
-
-.separador_cursos {
-    display: table;
-    margin: 60px auto;
-}
-
-.container .vb {
-    padding-top: 30px;
-}
-
-.separador_de_conteudo {
-    margin: 30px auto 180px auto;
-}
-
-.s_t_d {
-    position: relative;
-    right: 4.5%;
-    top: 4px;
-}
-
-.s_b_d {
-    position: relative;
-    right: 4.5%;
-}
-
-
-/*---------------------------------------------------------------------------------------------------------------
+    
+    .separador_cursos {
+        display: table;
+        margin: 60px auto;
+    }
+    
+    .container .vb {
+        padding-top: 30px;
+    }
+    
+    .separador_de_conteudo {
+        margin: 30px auto 180px auto;
+    }
+    
+    .s_t_d {
+        position: relative;
+        right: 4.5%;
+        top: 4px;
+    }
+    
+    .s_b_d {
+        position: relative;
+        right: 4.5%;
+    }
+    /*---------------------------------------------------------------------------------------------------------------
 MENU
 */
-
-.menu {
-    background-color: rgba(0, 0, 0, 0.6) !important;
-}
-
-.menu ul li a {
-    font-size: 16px;
-}
-
-.menu_ativo li a {
-    color: #fffff0 !important;
-}
-
-.menu_ativo li a:hover {
-    color: #db7301 !important;
-}
-
-.menu ul .element_menu_ativo a {
-    color: #db7301 !important;
-}
-
-.menu_ativo li a:after {
-    background: #db7301;
-}
-
-
-/*---------------------------------------------------------------------------------------------------------------
+    
+    .menu {
+        background-color: rgba(0, 0, 0, 0.6) !important;
+    }
+    
+    .menu ul li a {
+        font-size: 16px;
+    }
+    
+    .menu_ativo li a {
+        color: #fffff0 !important;
+    }
+    
+    .menu_ativo li a:hover {
+        color: #db7301 !important;
+    }
+    
+    .menu ul .element_menu_ativo a {
+        color: #db7301 !important;
+    }
+    
+    .menu_ativo li a:after {
+        background: #db7301;
+    }
+    /*---------------------------------------------------------------------------------------------------------------
 INTRODUÇÃO
 */
-
-.intro {
-    background: url("img/bg_teo.png") no-repeat center;
-    background-size: cover;
-    height: 750px;
-}
-
-.versiculo {
-    padding-top: 60px;
-    padding-bottom: 120px;
-    margin: 0 auto;
-    height: 80px;
-    width: 65%;
-}
-
-.versiculo div {
-    display: inline;
-    position: relative;
-    bottom: 144px;
-    right: 13%;
-    z-index: -1;
-}
-
-.versiculo p {
-    color: #383e33;
-    font-size: 18px;
-    margin-bottom: 15px;
-    text-align: center;
-}
-
-.versiculo>span p {
-    color: #383e33;
-    font-size: 15px;
-    text-align: right;
-    font-style: italic;
-}
-
-
-/*---------------------------------------------------------------------------------------------------------------
+    
+    .intro {
+        background: url("img/bg_teo.png") no-repeat center;
+        background-size: cover;
+        height: 750px;
+        animation: modal 1.5s forwards;
+    }
+    
+    .versiculo {
+        padding-top: 60px;
+        padding-bottom: 120px;
+        margin: 0 auto;
+        height: 80px;
+        width: 65%;
+        animation: verse_show_animation 1.5s forwards;
+    }
+    
+    .versiculo div {
+        display: inline;
+        position: relative;
+        bottom: 144px;
+        right: 13%;
+        z-index: -1;
+    }
+    
+    .versiculo p {
+        color: #383e33;
+        font-size: 18px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    
+    .versiculo>span p {
+        color: #383e33;
+        font-size: 15px;
+        text-align: right;
+        font-style: italic;
+    }
+    
+    @keyframes verse_show_animation {
+        from {
+            opacity: 0;
+            transform: translate3d(-300px, 0, 0);
+        }
+        to {
+            opacity: 1;
+            transform: translate3d(0, 0, 0);
+        }
+    }
+    /*---------------------------------------------------------------------------------------------------------------
 CURSOS
 */
-
-.cursos {
-    margin: 120px auto 90px auto;
-}
-
-.cursos h1 {
-    padding-bottom: 60px;
-}
-
-.cursos_teologicos {
-    display: flex;
-}
-
-.conf .info {
-    order: 2;
-}
-
-.conf .cursos_img {
-    order: 1;
-}
-
-.info {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.info_txt {
-    width: 360px;
-}
-
-.info_title {
-    margin-bottom: 0px;
-}
-
-.info_title img {
-    position: relative;
-}
-
-.mancha_title_min img {
-    left: 41%;
-    bottom: 45px;
-    z-index: -1;
-}
-
-.mancha_title_conf img {
-    left: 36%;
-    bottom: 32px;
-    z-index: -1;
-}
-
-.mancha_title_teo img {
-    left: 48%;
-    bottom: 52px;
-    z-index: -1;
-}
-
-.info_title h2 {
-    margin: 0 auto;
-}
-
-.info p {
-    margin-bottom: 15px;
-    font-size: 12px;
-}
-
-.cursos_btn {
-    display: inline-block;
-    transition: transform 1.2s ease-in-out;
-}
-
-.cursos_btn img {
-    cursor: pointer;
-}
-
-.cursos_btn span {
-    cursor: pointer;
-}
-
-.cursos_btn:hover {
-    transform: translateX(60px)
-}
-
-.mancha_min {
-    margin-top: 50px;
-}
-
-.mancha_conf {
-    margin-top: 38px;
-}
-
-.mancha_teo {
-    margin-top: -18px;
-}
-
-.mancha_min span {
-    position: relative;
-    bottom: 29px;
-    right: 53%;
-    color: #fffff0;
-    font-size: 1.3em;
-    font-weight: bold;
-}
-
-.mancha_conf span {
-    position: relative;
-    bottom: 23px;
-    right: 48%;
-    color: #fffff0;
-    font-size: 1.3em;
-    font-weight: bold;
-}
-
-.mancha_teo span {
-    position: relative;
-    bottom: 69px;
-    right: 51%;
-    color: #fffff0;
-    font-size: 1.3em;
-    font-weight: bold;
-}
-
-
-/*---------------------------------------------------------------------------------------------------------------
+    
+    .cursos {
+        margin: 120px auto 90px auto;
+    }
+    
+    .cursos h1 {
+        padding-bottom: 60px;
+    }
+    
+    .cursos_teologicos {
+        display: flex;
+    }
+    
+    .conf .info {
+        order: 2;
+    }
+    
+    .conf .cursos_img {
+        order: 1;
+    }
+    
+    .info {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .info_txt {
+        width: 360px;
+    }
+    
+    .info_title {
+        margin-bottom: 0px;
+    }
+    
+    .info_title img {
+        position: relative;
+    }
+    
+    .mancha_title_min img {
+        left: 41%;
+        bottom: 45px;
+        z-index: -1;
+    }
+    
+    .mancha_title_conf img {
+        left: 36%;
+        bottom: 32px;
+        z-index: -1;
+    }
+    
+    .mancha_title_teo img {
+        left: 48%;
+        bottom: 52px;
+        z-index: -1;
+    }
+    
+    .info_title h2 {
+        margin: 0 auto;
+    }
+    
+    .info p {
+        margin-bottom: 15px;
+        font-size: 12px;
+    }
+    
+    .cursos_btn {
+        display: inline-block;
+        transition: transform 1.2s ease-in-out;
+    }
+    
+    .cursos_btn img {
+        cursor: pointer;
+    }
+    
+    .cursos_btn span {
+        cursor: pointer;
+    }
+    
+    .cursos_btn:hover {
+        transform: translateX(60px)
+    }
+    
+    .mancha_min {
+        margin-top: 50px;
+    }
+    
+    .mancha_conf {
+        margin-top: 38px;
+    }
+    
+    .mancha_teo {
+        margin-top: -18px;
+    }
+    
+    .mancha_min span {
+        position: relative;
+        bottom: 29px;
+        right: 53%;
+        color: #fffff0;
+        font-size: 1.3em;
+        font-weight: bold;
+    }
+    
+    .mancha_conf span {
+        position: relative;
+        bottom: 23px;
+        right: 48%;
+        color: #fffff0;
+        font-size: 1.3em;
+        font-weight: bold;
+    }
+    
+    .mancha_teo span {
+        position: relative;
+        bottom: 69px;
+        right: 51%;
+        color: #fffff0;
+        font-size: 1.3em;
+        font-weight: bold;
+    }
+    /*---------------------------------------------------------------------------------------------------------------
 PRELETOR
 */
-
-.rev h1 {
-    margin-bottom: 60px;
-}
-
-.rev div img {
-    display: table;
-    margin: 0 auto 30px auto;
-}
-
-.rev .h2rev {
-    display: table;
-    margin: 0 auto;
-}
-
-.h2rev span img {
-    position: relative;
-    bottom: 30px;
-    z-index: -5;
-    left: 15%;
-}
-
-.rev h2 {
-    font-size: 24px;
-}
-
-.rev_info {
-    width: 70%;
-    display: table;
-    margin: 0 auto 30px auto;
-}
-
-.rev_info p {
-    font-size: 14px;
-    font-style: italic;
-    text-align: center;
-}
-
-
-/*---------------------------------------------------------------------------------------------------------------
+    
+    .rev h1 {
+        margin-bottom: 60px;
+    }
+    
+    .rev div img {
+        display: table;
+        margin: 0 auto 30px auto;
+    }
+    
+    .rev .h2rev {
+        display: table;
+        margin: 0 auto;
+    }
+    
+    .h2rev span img {
+        position: relative;
+        bottom: 30px;
+        z-index: -5;
+        left: 15%;
+    }
+    
+    .rev h2 {
+        font-size: 24px;
+    }
+    
+    .rev_info {
+        width: 70%;
+        display: table;
+        margin: 0 auto 30px auto;
+    }
+    
+    .rev_info p {
+        font-size: 14px;
+        font-style: italic;
+        text-align: center;
+    }
+    /*---------------------------------------------------------------------------------------------------------------
 INFORMAÇÕES SOBRE AS MATERIAS
 */
-
-.info_materias {
-    position: fixed;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    top: 0;
-    left: 0;
-    z-index: 2000;
-    height: 100vh;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.6);
-}
-
-.info_materias.ativo {
-    display: flex;
-}
-
-.materias {
-    background: rgba(221, 216, 216, 0.98);
-    box-shadow: 0px 10px 30px 2px rgba(0, 0, 0, 0.4);
-    padding: 30px 0 10px 0;
-    border-radius: 25px;
-    width: 65%;
-    max-width: 1100px;
-    min-width: 450px;
-}
-
-.materias_container {
-    padding-top: 30px;
-}
-
-.materias_h1 h1 {
-    position: relative;
-    z-index: 1;
-}
-
-.materias_h1 span {
-    position: relative;
-    bottom: 47px;
-    left: 48.5%;
-    z-index: 0;
-}
-
-.materias_h3 h3 {
-    font-size: 19px;
-    position: relative;
-    z-index: 1;
-}
-
-.materias_h3 span {
-    position: relative;
-    bottom: 37px;
-    right: 9%;
-    z-index: 0;
-}
-
-.materias_container {
-    display: flex;
-    width: 80%;
-    margin: 0 auto;
-    justify-content: space-between;
-}
-
-.materias_disc {
-    width: 280px;
-}
-
-.materias_disc li {
-    margin-top: 3px;
-    font-weight: normal;
-    font-style: italic;
-    font-size: 13px;
-}
-
-.disc_container {
-    position: relative;
-    bottom: 35px;
-}
-
-.materias_disc li::before {
-    font-weight: bold;
-    display: inline;
-    content: "†";
-    width: 5px;
-    height: 5px;
-    padding-right: 10px;
-}
-
-.materias_info {
-    width: 50%;
-    margin-right: 30px;
-}
-
-.materias_info li {
-    font-size: 14px;
-    margin-bottom: 10px;
-}
-
-.materias_info li::before {
-    font-size: 20px;
-    display: inline;
-    content: "♁";
-    padding-right: 10px;
-}
-
-.materias_info li:last-child::before {
-    display: none;
-}
-
-.materias_info li:last-child {
-    padding-left: 20px;
-    padding-top: 20px;
-    text-align: justify;
-    font-style: italic;
-}
-
-.materias_btn {
-    margin-top: 45px;
-    width: 240px;
-}
-
-.materias_btn span {
-    color: #fffff0;
-    font-size: 30px;
-    position: relative;
-    left: 32%;
-    bottom: 66px;
-    cursor: pointer;
-}
-
-.materias_btn img {
-    cursor: pointer;
-    transition: transform 1.5s ease-in-out;
-}
-
-.ativo .materias {
-    animation: modal 1.4s forwards;
-}
-
-
-/*---------------------------------------------------------------------------------------------------------------
+    
+    .info_materias {
+        position: fixed;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        left: 0;
+        z-index: 2000;
+        height: 100vh;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.6);
+    }
+    
+    .info_materias.ativo {
+        display: flex;
+    }
+    
+    .materias {
+        background: rgba(221, 216, 216, 0.98);
+        box-shadow: 0px 10px 30px 2px rgba(0, 0, 0, 0.4);
+        padding: 30px 0 10px 0;
+        border-radius: 25px;
+        width: 65%;
+        max-width: 1100px;
+        min-width: 450px;
+    }
+    
+    .materias_container {
+        padding-top: 30px;
+    }
+    
+    .materias_h1 h1 {
+        position: relative;
+        z-index: 1;
+    }
+    
+    .materias_h1 span {
+        position: relative;
+        bottom: 47px;
+        left: 48.5%;
+        z-index: 0;
+    }
+    
+    .materias_h3 h3 {
+        font-size: 19px;
+        position: relative;
+        z-index: 1;
+    }
+    
+    .materias_h3 span {
+        position: relative;
+        bottom: 37px;
+        right: 9%;
+        z-index: 0;
+    }
+    
+    .materias_container {
+        display: flex;
+        width: 80%;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+    
+    .materias_disc {
+        width: 280px;
+    }
+    
+    .materias_disc li {
+        margin-top: 3px;
+        font-weight: normal;
+        font-style: italic;
+        font-size: 13px;
+    }
+    
+    .disc_container {
+        position: relative;
+        bottom: 35px;
+    }
+    
+    .materias_disc li::before {
+        font-weight: bold;
+        display: inline;
+        content: "†";
+        width: 5px;
+        height: 5px;
+        padding-right: 10px;
+    }
+    
+    .materias_info {
+        width: 50%;
+        margin-right: 30px;
+    }
+    
+    .materias_info li {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    
+    .materias_info li::before {
+        font-size: 20px;
+        display: inline;
+        content: "♁";
+        padding-right: 10px;
+    }
+    
+    .materias_info li:last-child::before {
+        display: none;
+    }
+    
+    .materias_info li:last-child {
+        padding-left: 20px;
+        padding-top: 20px;
+        text-align: justify;
+        font-style: italic;
+    }
+    
+    .materias_btn {
+        margin-top: 60px;
+        width: 240px;
+    }
+    
+    .materias_btn span {
+        color: #fffff0;
+        font-size: 30px;
+        position: relative;
+        left: 32%;
+        bottom: 66px;
+        cursor: pointer;
+    }
+    
+    .materias_btn img {
+        cursor: pointer;
+        transition: transform 1.5s ease-in-out;
+    }
+    
+    .ativo .materias {
+        animation: modal 1.4s forwards;
+    }
+    /*---------------------------------------------------------------------------------------------------------------
 FOOTER
 */
-
-.final_container dd,
-.final_text,
-.copy_text {
-    font-weight: normal !important;
-}
-
-.footer_theo {
-    font-family: "Libre Baskerville";
-    margin-top: 90px;
-}
-
-.separador_theo {
-    background: url("img/bg_footer_theo.png") no-repeat center;
-    background-size: cover;
-}
-
-.footer_theo .final {
-    background-color: #db7301;
-}
+    
+    .final_container dd,
+    .final_text,
+    .copy_text {
+        font-weight: normal !important;
+    }
+    
+    .footer_theo {
+        font-family: "Libre Baskerville";
+        margin-top: 90px;
+    }
+    
+    .separador_theo {
+        background: url("img/bg_footer_theo.png") no-repeat center;
+        background-size: cover;
+    }
+    
+    .footer_theo .final {
+        background-color: #db7301;
+    }
