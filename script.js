@@ -53,12 +53,64 @@ window.addEventListener('scroll', showMenu);
 /*---------------------------------------------------------------------------------------------------------------
  */
 
-const botaoVoltar = document.querySelector('[data-theo="fechar"]');
-const containerTheo = document.querySelector('[data-theo="container"]');
-const btnAbrir = document.querySelector('[data-theo="open"]');
+const botaoVoltar = document.querySelector('[data-min="fechar"]');
+const containerMin = document.querySelector('[data-min="container"]');
+const btnAbrir = document.querySelector('[data-min="open"]');
 
 
 function toggleMateria(event) {
+    event.preventDefault();
+
+    containerMin.classList.toggle('ativo');
+}
+
+
+function cliqueForaMin(event) {
+    if (event.target === this) {
+        toggleMateria(event);
+    }
+}
+
+botaoVoltar.addEventListener('click', toggleMateria);
+btnAbrir.addEventListener('click', toggleMateria);
+containerMin.addEventListener('click', cliqueForaMin);
+
+
+/*---------------------------------------------------------------------------------------------------------------
+ */
+
+const botaoVoltarC = document.querySelector('[data-conf="fechar"]');
+const containerConf = document.querySelector('[data-conf="container"]');
+const btnAbrirC = document.querySelector('[data-conf="open"]');
+
+
+function toggleConf(event) {
+    event.preventDefault();
+
+    containerConf.classList.toggle('ativo');
+}
+
+
+function cliqueForaConf(event) {
+    if (event.target === this) {
+        toggleConf(event);
+    }
+}
+
+botaoVoltarC.addEventListener('click', toggleConf);
+btnAbrirC.addEventListener('click', toggleConf);
+containerConf.addEventListener('click', cliqueForaConf);
+
+
+/*---------------------------------------------------------------------------------------------------------------
+ */
+
+const botaoVoltarT = document.querySelector('[data-theo="fechar"]');
+const containerTheo = document.querySelector('[data-theo="container"]');
+const btnAbrirT = document.querySelector('[data-theo="open"]');
+
+
+function toggleMateriaT(event) {
     event.preventDefault();
 
     containerTheo.classList.toggle('ativo');
@@ -67,12 +119,12 @@ function toggleMateria(event) {
 
 function cliqueForaTheo(event) {
     if (event.target === this) {
-        toggleMateria(event);
+        toggleMateriaT(event);
     }
 }
 
-botaoVoltar.addEventListener('click', toggleMateria);
-btnAbrir.addEventListener('click', toggleMateria);
+botaoVoltarT.addEventListener('click', toggleMateriaT);
+btnAbrirT.addEventListener('click', toggleMateriaT);
 containerTheo.addEventListener('click', cliqueForaTheo);
 
 
