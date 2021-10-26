@@ -355,11 +355,25 @@ INFORMAÇÕES SOBRE AS MATERIAS
     .materias {
         background: rgba(221, 216, 216, 0.98);
         box-shadow: 0px 10px 30px 2px rgba(0, 0, 0, 0.4);
-        padding: 30px 0 10px 0;
+        padding: 15px 0 15px 0;
         border-radius: 25px;
-        width: 75%;
         min-width: 450px;
-        max-width: 1300px;
+        width: 65%;
+        max-width: 1200px;
+        max-height: 735px;
+    }
+    
+    .materias.ministerial .materias_disc .disc_container ul li {
+        max-width: 95% !important;
+    }
+    
+    .materias.confessional .materias_h1 span img {
+        width: 320px;
+    }
+    
+    .materias.confessional .materias_h1 span {
+        left: 44.5%;
+        bottom: 50px;
     }
     
     .materias_container {
@@ -393,21 +407,22 @@ INFORMAÇÕES SOBRE AS MATERIAS
     
     .materias_container {
         display: flex;
-        width: 75%;
+        width: 80%;
         margin: 0 auto;
         justify-content: space-between;
     }
     
     .materias_disc {
-        min-width: 50%;
+        margin-left: 30px;
     }
     
-    .materias_disc li {
+    .materias_disc .disc_container ul li {
         margin-top: 3px;
         font-weight: normal;
         font-style: italic;
         font-size: 13px;
-        width: 220px;
+        max-width: 50%;
+        min-width: 220px;
         margin-right: 10px;
     }
     
@@ -421,8 +436,6 @@ INFORMAÇÕES SOBRE AS MATERIAS
         flex-direction: column;
         flex-wrap: wrap;
         max-height: 505px;
-        width: 240px;
-        max-width: 444px;
     }
     
     .materias_disc li::before {
