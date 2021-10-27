@@ -105,6 +105,8 @@ INTRODUÇÃO
         text-align: left;
         font-size: 48px;
         letter-spacing: 2px;
+        margin-top: 0px;
+        margin-bottom: 0px;
     }
     
     .intro p {
@@ -238,7 +240,7 @@ CURSOS
     
     .cursos_btn {
         display: inline-block;
-        transition: transform 0.8s ease-in-out;
+        transition: transform 0.5s ease-in-out;
     }
     
     .cursos_btn img {
@@ -365,12 +367,12 @@ INFORMAÇÕES SOBRE AS MATERIAS
         max-height: 735px;
     }
     
-    .materias.confessional {
-        max-height: 800px;
-    }
-    
     .materias.ministerial .materias_disc .disc_container ul li {
         max-width: 95% !important;
+    }
+    
+    .materias.confessional {
+        max-height: 800px;
     }
     
     .materias.confessional .materias_h1 span img {
@@ -380,6 +382,15 @@ INFORMAÇÕES SOBRE AS MATERIAS
     .materias.confessional .materias_h1 span {
         left: 40.5%;
         bottom: 50px;
+    }
+    
+    .materias.teologica {
+        width: 75%;
+        max-height: 800px;
+    }
+    
+    .materias.teologica .materias_disc {
+        width: 60%;
     }
     
     .materias_container {
