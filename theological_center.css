@@ -238,7 +238,7 @@ CURSOS
     
     .cursos_btn {
         display: inline-block;
-        transition: transform 1.2s ease-in-out;
+        transition: transform 0.8s ease-in-out;
     }
     
     .cursos_btn img {
