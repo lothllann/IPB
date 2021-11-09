@@ -66,6 +66,132 @@ body {
 
 
 /*---------------------------------------------------------------------------------------------------------------
+INTRODUÇÃO
+*/
+
+.intro {
+    height: 100vh;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.img-fundo {
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+    display: block;
+}
+
+.img_1203px,
+.img_850px,
+.img_600px {
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+    display: none;
+}
+
+.img-fundo img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+    animation: zoom 25s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+.container-intro {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logo {
+    width: 100%;
+    align-self: center;
+    margin: 0 auto;
+    position: relative;
+}
+
+.logo img {
+    display: block;
+    max-width: 100%;
+}
+
+.container-intro img {
+    animation: moveBanner 1.75s 0.5s forwards;
+    opacity: 0;
+    position: relative;
+}
+
+.intro input {
+    display: none;
+}
+
+input:checked~label .hamburguer {
+    transform: rotate(45deg);
+    background: #383e33;
+}
+
+input:checked~label .hamburguer:before {
+    transform: rotate(90deg);
+    background: #383e33;
+    top: 0;
+}
+
+input:checked~label .hamburguer:after {
+    transform: rotate(90deg);
+    background: #383e33;
+    bottom: 0;
+}
+
+.versiculo {
+    padding-top: 60px;
+    padding-bottom: 80px;
+    margin: 0 auto;
+    height: 80px;
+    width: 520px;
+}
+
+.versiculo p {
+    color: #383e33;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.versiculo>span p {
+    color: #383e33;
+    font-size: 1.3em;
+    text-align: right;
+    font-style: italic;
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(1.3);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes moveBanner {
+    0% {
+        transform: translateY(-30rem) rotateY(-20deg);
+    }
+    100% {
+        transform: translateY(0) rotateY(0);
+        opacity: 1;
+    }
+}
+
+
+/*---------------------------------------------------------------------------------------------------------------
 MENU
 */
 

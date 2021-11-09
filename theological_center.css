@@ -34,6 +34,15 @@ SEPARADORES
         padding-top: 30px;
     }
     
+    .versiculo.vb div {
+        bottom: 120px;
+    }
+    
+    .versiculo.vb div img {
+        height: 90px;
+        width: 850px;
+    }
+    
     .separador_de_conteudo {
         margin: 30px auto 180px auto;
     }
