@@ -316,6 +316,42 @@ SEPARADORES
 
 
 /*---------------------------------------------------------------------------------------------------------------
+BOTÕES
+*/
+
+.btn {
+    width: 100%;
+    align-self: flex-end;
+    margin-bottom: 30px;
+}
+
+.btn a {
+    margin: 0 auto;
+    display: block;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color: transparent;
+    color: #383e33;
+    width: 180px;
+    height: 65px;
+    border-radius: 20px;
+    cursor: pointer;
+    border: 2px solid #383e33;
+    transition: transform 1s;
+}
+
+.btn a:hover {
+    transform: translateY(-10px);
+    box-shadow: 2px 4px 10px 0.5px rgba(0, 0, 0, 0.2);
+    background-color: #383e33;
+    border: 0px solid #383e33;
+    color: #fffff0;
+}
+
+
+/*---------------------------------------------------------------------------------------------------------------
 FOOTER
 */
 
