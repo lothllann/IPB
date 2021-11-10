@@ -2,7 +2,7 @@ h1 {
     margin-bottom: 60px;
 }
 
-h2 {
+.confissoes_container h2 {
     margin: 30px auto;
     display: table;
     font-size: 30px;
