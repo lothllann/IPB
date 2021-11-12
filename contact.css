@@ -44,8 +44,8 @@
         font-family: "Libre Baskerville";
         font-size: 16px;
         font-style: italic;
-        height: 150px;
-        max-height: 150px;
+        height: 145px;
+        max-height: 145px;
         width: 280px;
         max-width: 400px;
         border: 1.5px solid #383e33;
@@ -75,4 +75,31 @@
         background-color: #383e33;
         border: 0px solid #383e33;
         color: #fffff0;
+    }
+    
+    .link_rs {
+        display: inline-block;
+        background-color: transparent;
+        border: 2px solid #383e33;
+        border-radius: 20px;
+        padding: 10px;
+        margin-bottom: 15px;
+        cursor: pointer;
+    }
+    
+    .link_rs a {
+        display: flex;
+        align-items: center;
+    }
+    
+    .link_rs span {
+        color: #383e33;
+        font-size: 20px;
+        font-weight: bold;
+        margin-left: 10px;
+    }
+    
+    .link_rs a img {
+        width: 57px;
+        height: 57px;
     }
