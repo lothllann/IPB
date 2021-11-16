@@ -14,7 +14,7 @@
         font-size: 22px;
     }
     
-    ul {
+    .contatoo ul {
         margin-bottom: 30px;
     }
     
@@ -24,6 +24,10 @@
         margin-left: 15px;
         color: #383e33;
         font-size: 18px;
+    }
+    
+    .info_contato p {
+        margin-bottom: 30px;
     }
     
     input {
@@ -77,8 +81,7 @@
         color: #fffff0;
     }
     
-    .link_rs {
-        display: inline-block;
+    .link a {
         background-color: transparent;
         border: 2px solid #383e33;
         border-radius: 20px;
@@ -87,19 +90,30 @@
         cursor: pointer;
     }
     
-    .link_rs a {
+    .link a {
         display: flex;
         align-items: center;
+        color: #383e33;
     }
     
-    .link_rs span {
-        color: #383e33;
+    .link a span {
         font-size: 20px;
         font-weight: bold;
         margin-left: 10px;
     }
     
-    .link_rs a img {
+    .link a img {
+        display: none;
         width: 57px;
         height: 57px;
+    }
+    
+    .link a:hover {
+        background-color: #383e33;
+        border: 2px solid transparent;
+        color: white;
+    }
+    
+    .link a div:last-of-type {
+        display: none;
     }

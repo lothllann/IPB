@@ -132,6 +132,15 @@ containerTheo.addEventListener('click', cliqueForaTheo);
 /*---------------------------------------------------------------------------------------------------------------
  */
 
+
+
+
+
+
+
+
+
+
 // const logo_preto = document.querySelector('[data-menu="lp"]');
 // const logo_roxo = document.querySelector('[data-menu="lr"]');
 

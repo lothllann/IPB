@@ -381,7 +381,6 @@ FOOTER
 }
 
 .final {
-    height: 348px;
     background-color: #383e33;
 }
 
@@ -389,7 +388,7 @@ FOOTER
     margin: 0 auto;
     height: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 2fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 .final_container h2 {
@@ -405,7 +404,7 @@ FOOTER
 }
 
 .localizacao {
-    padding-top: 60px;
+    padding-top: 30px;
 }
 
 .localizacao h2 {
@@ -425,7 +424,8 @@ FOOTER
 }
 
 .contato {
-    padding-top: 60px;
+    padding-top: 30px;
+    margin-bottom: 30px;
 }
 
 .contato h2 {
@@ -457,64 +457,55 @@ FOOTER
     padding-bottom: 15px;
 }
 
-.final_logo {
+.footer_center {
     display: flex;
     width: 100%;
-    padding-top: 15px;
     flex-direction: column;
     margin: 0 auto;
     align-items: center;
+    justify-content: center;
 }
 
-.logo_footer {
-    margin-bottom: 15px;
-}
-
-.final_text {
+.footer_text_center {
     width: 46px;
     color: #fffff0;
     font-size: 0.9em;
     text-align: center;
     line-height: 1.3em;
     letter-spacing: 0.4px;
+    transform: scale(1.2);
+    margin: 15px 0;
+}
+
+.s_F {
+    transform: scale(1.2);
+}
+
+.footer_right_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_right_logo img {
+    width: 70%;
+    max-width: 80%;
+    min-width: 30%;
 }
 
 .sociais {
-    padding-top: 60px;
-}
-
-.sociais_container {
-    margin: 0 0 0 auto;
-    width: 194px;
-}
-
-.sociais ul {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
 }
 
 .sociais ul li {
-    padding-top: 30px;
+    padding-top: 10px;
 }
 
-.copy {
-    height: 40px;
-    background-color: #fffff0;
-}
-
-.copy_container {
-    height: 100%;
-    display: flex;
-    margin: 0 auto;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-.copy_text {
-    text-align: left;
-    color: #005131;
-    font-size: 1.2em;
-    padding-left: 15px;
+.sociais ul li img {
+    width: 50px;
+    height: 50px;
 }
 
 
