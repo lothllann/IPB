@@ -538,21 +538,24 @@ FOOTER
 */
     
     .final_container dd,
-    .final_text,
-    .copy_text {
+    .final_text {
         font-weight: normal !important;
     }
     
-    .footer_theo {
+    .footer {
         font-family: "Libre Baskerville";
         margin-top: 90px;
     }
     
-    .separador_theo {
+    .separador {
         background: url("img/bg_footer_theo.png") no-repeat center;
         background-size: cover;
     }
     
-    .footer_theo .final {
+    .footer .final {
         background-color: #db7301;
+    }
+    
+    .footer_text_center {
+        font-weight: normal;
     }

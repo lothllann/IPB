@@ -382,125 +382,60 @@ FOOTER
 
 .final {
     background-color: #383e33;
+    padding: 30px 0;
 }
 
 .final_container {
     margin: 0 auto;
     height: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
 }
 
 .final_container h2 {
     color: #fffff0;
 }
 
-.final_container dt {
+.final_container li {
     color: #fffff0;
-}
-
-.final_container dd {
-    color: #fffff0;
-}
-
-.localizacao {
-    padding-top: 30px;
 }
 
 .localizacao h2 {
     margin-bottom: 15px;
 }
 
-.localizacao dt {
-    margin-bottom: 5px;
-    font-size: 1.1em;
-}
-
-.localizacao dd {
+.localizacao li {
     text-align: left;
-    margin-bottom: 2px;
-    font-size: 0.9em;
+    font-style: italic;
+    margin-bottom: 5px;
+    font-size: 16px;
     padding-left: 10px;
 }
 
-.contato {
-    padding-top: 30px;
-    margin-bottom: 30px;
-}
-
-.contato h2 {
-    margin-bottom: 15px;
-}
-
-.contato dt {
-    margin-bottom: 5px;
-    font-size: 1.1em;
-}
-
-.contato dd {
-    text-align: left;
-    margin-bottom: 2px;
-    font-size: 0.9em;
-    padding-left: 15px;
-}
-
-.pastor dd:last-child {
-    font-style: italic;
-    font-size: 0.8em;
-    padding-left: 15px;
-}
-
-.presb dd:nth-child(odd) {
-    font-style: italic;
-    font-size: 0.8em;
-    padding-left: 15px;
-    padding-bottom: 15px;
-}
-
-.footer_center {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    margin: 0 auto;
-    align-items: center;
-    justify-content: center;
-}
-
-.footer_text_center {
-    width: 46px;
-    color: #fffff0;
-    font-size: 0.9em;
-    text-align: center;
-    line-height: 1.3em;
-    letter-spacing: 0.4px;
-    transform: scale(1.2);
-    margin: 15px 0;
-}
-
-.s_F {
-    transform: scale(1.2);
-}
-
-.footer_right_logo {
+.footer_center_logo {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.footer_right_logo img {
-    width: 70%;
-    max-width: 80%;
-    min-width: 30%;
+.footer_center_logo img {
+    width: 30%;
+    max-width: 30%;
 }
 
 .sociais {
     display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
+}
+
+.sociais ul {
+    display: flex;
 }
 
 .sociais ul li {
-    padding-top: 10px;
+    padding-right: 15px;
 }
 
 .sociais ul li img {
