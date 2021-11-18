@@ -34,10 +34,15 @@ h1 {
     font-style: italic;
 }
 
+.simbolos {
+    margin-top: 90px;
+    margin-bottom: 30px;
+}
+
 .simbolos p {
     text-align: center;
     width: 70%;
-    margin: 60px auto 30px auto;
+    margin: 0px auto 45px auto;
     display: table;
     font-size: 20px;
     font-weight: bold;

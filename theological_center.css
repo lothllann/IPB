@@ -559,3 +559,39 @@ FOOTER
     .footer_text_center {
         font-weight: normal;
     }
+    
+    .sociais .facee div {
+        background-image: url("img/face_laranja.svg");
+        background-size: cover;
+        width: 30px;
+        height: 30px;
+        margin-bottom: 5px;
+    }
+    
+    .sociais .facee div:hover {
+        background-image: url("img/face_la.svg");
+    }
+    
+    .sociais .yt div {
+        background-image: url("img/yt_laranja.svg");
+        background-size: cover;
+        width: 30px;
+        height: 30px;
+        margin-bottom: 5px;
+    }
+    
+    .sociais .yt div:hover {
+        background-image: url("img/yt_lv.svg");
+    }
+    
+    .sociais .insta div {
+        background-image: url("img/insta_laranja.svg");
+        background-size: cover;
+        width: 30px;
+        height: 30px;
+        margin-bottom: 5px;
+    }
+    
+    .sociais .insta div:hover {
+        background-image: url("img/insta_cor_la.svg");
+    }

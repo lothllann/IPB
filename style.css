@@ -398,7 +398,6 @@ FOOTER
 
 .final_container {
     margin: 0 auto;
-    height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
@@ -442,8 +441,8 @@ FOOTER
 }
 
 .footer_center_logo img {
-    width: 40%;
-    max-width: 40%;
+    width: 30%;
+    max-width: 30%;
 }
 
 .sociais {
@@ -462,15 +461,47 @@ FOOTER
 .sociais ul li {
     padding: 0 10px;
     margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.sociais .facee div {
+    background-image: url("img/face_bege.svg");
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 5px;
+}
+
+.sociais .facee div:hover {
+    background-image: url("img/face_azul.svg");
+}
+
+.sociais .yt div {
+    background-image: url("img/yt_bege.svg");
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 5px;
+}
+
+.sociais .yt div:hover {
+    background-image: url("img/youTub_vermelho.svg");
+}
+
+.sociais .insta div {
+    background-image: url("img/insta_bege.svg");
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 5px;
+}
+
+.sociais .insta div:hover {
+    background-image: url("img/insta_cor.svg");
 }
 
 .sociais ul li:last-of-type {
     margin-bottom: 0px;
-}
-
-.sociais ul li img {
-    width: 35px;
-    height: 35px;
 }
 
 
