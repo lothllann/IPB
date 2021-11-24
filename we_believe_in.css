@@ -3,14 +3,14 @@ h1 {
 }
 
 .confissoes_container h2 {
-    margin: 30px auto;
+    margin: 30px auto 60px auto;
     display: table;
     font-size: 30px;
     font-weight: bolder;
 }
 
 .intro_cremos {
-    margin: 0 auto 60px auto;
+    margin: 0 auto 120px auto;
 }
 
 .intro_cremos p {
